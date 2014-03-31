@@ -1,0 +1,1470 @@
+jan 25, 2014 1:41:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+jan 25, 2014 1:41:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+jan 25, 2014 1:41:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@7cd88d07')
+jan 25, 2014 1:41:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1403c543]
+jan 25, 2014 1:41:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:45:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:45:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6c909111]
+jan 25, 2014 1:45:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:45:11 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@76f7e9e', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@28e1bae2', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7bb46065', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.pet.controller.TestController.getPerson() and public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7f24c655', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@475937a9']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:427)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:45:11 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /petClinic threw load() exception
+org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@76f7e9e', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@28e1bae2', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7bb46065', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.pet.controller.TestController.getPerson() and public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7f24c655', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@475937a9']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:427)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:45:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:45:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6674e825]
+jan 25, 2014 1:45:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:45:43 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+java.lang.NoClassDefFoundError: be/vdab/wim/pet/model/Person
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$2.run(IntrospectionModeller.java:230)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.getAllDeclaredMethods(IntrospectionModeller.java:224)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.checkForNonPublicMethodIssues(IntrospectionModeller.java:164)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.doCreateResourceBuilder(IntrospectionModeller.java:118)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.access$000(IntrospectionModeller.java:80)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:111)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.createResourceBuilder(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:652)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: be.vdab.wim.pet.model.Person
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 62 more
+
+jan 25, 2014 1:45:43 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /petClinic threw load() exception
+java.lang.ClassNotFoundException: be.vdab.wim.pet.model.Person
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$2.run(IntrospectionModeller.java:230)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.getAllDeclaredMethods(IntrospectionModeller.java:224)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.checkForNonPublicMethodIssues(IntrospectionModeller.java:164)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.doCreateResourceBuilder(IntrospectionModeller.java:118)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.access$000(IntrospectionModeller.java:80)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:111)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.createResourceBuilder(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:652)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:45:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:45:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3c48dd71]
+jan 25, 2014 1:45:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:45:48 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@46fc6e44', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@66ab56c4', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.pet.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7acd9284', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() and public be.vdab.wim.pet.model.Person be.vdab.wim.pet.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@4e4e5718', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@793810d1']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:427)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:45:48 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /petClinic threw load() exception
+org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+[[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@46fc6e44', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@66ab56c4', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.pet.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7acd9284', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() and public be.vdab.wim.pet.model.Person be.vdab.wim.pet.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@4e4e5718', [FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@793810d1']
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:427)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:46:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:46:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@c21a9b0]
+jan 25, 2014 1:46:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:46:23 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+java.lang.NoClassDefFoundError: Lbe/vdab/wim/pet/service/HelloService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2397)
+	at java.lang.Class.getDeclaredFields(Class.java:1806)
+	at org.glassfish.jersey.internal.util.ReflectionHelper$4.run(ReflectionHelper.java:309)
+	at org.glassfish.jersey.internal.util.ReflectionHelper$4.run(ReflectionHelper.java:306)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.checkResourceClassFields(IntrospectionModeller.java:204)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.doCreateResourceBuilder(IntrospectionModeller.java:137)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.access$000(IntrospectionModeller.java:80)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:111)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.createResourceBuilder(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:652)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: be.vdab.wim.pet.service.HelloService
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 62 more
+
+jan 25, 2014 1:46:23 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /petClinic threw load() exception
+java.lang.ClassNotFoundException: be.vdab.wim.pet.service.HelloService
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2397)
+	at java.lang.Class.getDeclaredFields(Class.java:1806)
+	at org.glassfish.jersey.internal.util.ReflectionHelper$4.run(ReflectionHelper.java:309)
+	at org.glassfish.jersey.internal.util.ReflectionHelper$4.run(ReflectionHelper.java:306)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.checkResourceClassFields(IntrospectionModeller.java:204)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.doCreateResourceBuilder(IntrospectionModeller.java:137)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.access$000(IntrospectionModeller.java:80)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:111)
+	at org.glassfish.jersey.server.model.IntrospectionModeller$1.call(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+	at org.glassfish.jersey.server.model.IntrospectionModeller.createResourceBuilder(IntrospectionModeller.java:108)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:652)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:46:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1e3934df]
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [applicationContext.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1438)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1428)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:195)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 43 more
+
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.IllegalStateException: BeanFactory not initialized or already closed - call 'refresh' before accessing beans via the ApplicationContext
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.getBeanFactory(AbstractRefreshableApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:559)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:143)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+jan 25, 2014 1:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+jan 25, 2014 1:53:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@10295bca]
+jan 25, 2014 1:53:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [applicationContext.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1438)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1428)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:195)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 26 more
+
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.IllegalStateException: BeanFactory not initialized or already closed - call 'refresh' before accessing beans via the ApplicationContext
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.getBeanFactory(AbstractRefreshableApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:559)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:143)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:53:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+jan 25, 2014 1:53:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+jan 25, 2014 1:53:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@19a4fdf0')
+jan 25, 2014 1:53:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@27f34293]
+jan 25, 2014 1:53:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:53:42 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [applicationContext.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:542)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1447)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:862)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:358)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloService' for bean class [be.vdab.wim.service.HelloService] conflicts with existing, non-compatible bean definition of same name and class [be.vdab.wim.pet.service.HelloService]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253)
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1438)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1428)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:195)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	... 56 more
+
+jan 25, 2014 1:53:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:53:42 PM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.IllegalStateException: BeanFactory not initialized or already closed - call 'refresh' before accessing beans via the ApplicationContext
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.getBeanFactory(AbstractRefreshableApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:559)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:143)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:542)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:301)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.manager.ManagerServlet.check(ManagerServlet.java:1447)
+	at org.apache.catalina.manager.ManagerServlet.deploy(ManagerServlet.java:862)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:358)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:55:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@f976f3a]
+jan 25, 2014 1:55:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:56:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:56:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@259052ac]
+jan 25, 2014 1:56:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:57:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:57:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@8291579]
+jan 25, 2014 1:57:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:57:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:57:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1080966b]
+jan 25, 2014 1:57:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 1:58:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 1:58:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2c3a051c]
+jan 25, 2014 1:58:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:00:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:00:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7ba3cf79]
+jan 25, 2014 2:00:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:00:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:00:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@547651e9]
+jan 25, 2014 2:00:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:08:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:08:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2c254a08]
+jan 25, 2014 2:08:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:18:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:18:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@c829b2b]
+jan 25, 2014 2:18:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:19:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:19:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@d9094ed]
+jan 25, 2014 2:19:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:26:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:26:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7a41d27f]
+jan 25, 2014 2:26:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:28:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:28:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6e683841]
+jan 25, 2014 2:28:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:29:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:29:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@b7a351e]
+jan 25, 2014 2:29:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:29:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:30:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@26b748fc]
+jan 25, 2014 2:30:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:31:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:31:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@295603f1]
+jan 25, 2014 2:31:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:54:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:54:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6917a270]
+jan 25, 2014 2:54:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:56:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:56:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@497f6b61]
+jan 25, 2014 2:56:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 2:56:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 2:56:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@442fb931]
+jan 25, 2014 2:56:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:20:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:20:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5f49cfb3]
+jan 25, 2014 3:20:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:21:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:21:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@14e42616]
+jan 25, 2014 3:21:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:21:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:21:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@9216835]
+jan 25, 2014 3:21:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:21:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:21:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@df5670d]
+jan 25, 2014 3:21:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:22:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:22:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5b054dd3]
+jan 25, 2014 3:22:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:22:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:22:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@547c0670]
+jan 25, 2014 3:22:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:23:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:23:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@44f5661e]
+jan 25, 2014 3:23:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:24:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:24:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@457bb5a9]
+jan 25, 2014 3:24:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:25:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:25:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2c9bd87e]
+jan 25, 2014 3:25:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:25:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:25:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@67a6f0a4]
+jan 25, 2014 3:25:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:25:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:25:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@25dd6854]
+jan 25, 2014 3:25:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:26:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:26:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@31c0859d]
+jan 25, 2014 3:26:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:27:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:27:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3742c367]
+jan 25, 2014 3:27:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:27:07 PM org.apache.catalina.core.StandardContext listenerStart
+SEVERE: Exception sending context initialized event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.NoClassDefFoundError: ProductUser
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2531)
+	at java.lang.Class.getDeclaredMethods(Class.java:1855)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:387)
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:323)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:870)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:628)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: ProductUser
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 48 more
+
+jan 25, 2014 3:27:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:27:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@13e67137]
+jan 25, 2014 3:27:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:27:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:27:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@604f7710]
+jan 25, 2014 3:27:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:28:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:28:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@561dc507]
+jan 25, 2014 3:28:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:30:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:30:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2f2e6688]
+jan 25, 2014 3:30:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:32:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:32:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@c295172]
+jan 25, 2014 3:32:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:32:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:32:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@67c665bf]
+jan 25, 2014 3:32:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:33:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:33:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@34b400a7]
+jan 25, 2014 3:33:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:36:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:36:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@47427864]
+jan 25, 2014 3:36:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:36:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:36:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@64224068]
+jan 25, 2014 3:36:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:36:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:36:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@627c400d]
+jan 25, 2014 3:36:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:37:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:37:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7f1bfb6d]
+jan 25, 2014 3:37:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:37:47 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: StandardWrapper.Throwable
+java.lang.TypeNotPresentException: Type User not present
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:245)
+	at org.glassfish.jersey.server.model.Invocable.<init>(Invocable.java:159)
+	at org.glassfish.jersey.server.model.Invocable.create(Invocable.java:142)
+	at org.glassfish.jersey.server.model.ResourceMethod$Builder.createInvocable(ResourceMethod.java:457)
+	at org.glassfish.jersey.server.model.ResourceMethod$Builder.build(ResourceMethod.java:428)
+	at org.glassfish.jersey.server.model.Resource$Builder.processMethodBuilders(Resource.java:537)
+	at org.glassfish.jersey.server.model.Resource$Builder.buildResourceData(Resource.java:497)
+	at org.glassfish.jersey.server.model.Resource$Builder.build(Resource.java:529)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:653)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: User
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 61 more
+
+jan 25, 2014 3:37:47 PM org.apache.catalina.core.StandardContext loadOnStartup
+SEVERE: Servlet /petClinic threw load() exception
+java.lang.ClassNotFoundException: User
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:270)
+	at sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at sun.reflect.generics.repository.MethodRepository.getReturnType(MethodRepository.java:68)
+	at java.lang.reflect.Method.getGenericReturnType(Method.java:245)
+	at org.glassfish.jersey.server.model.Invocable.<init>(Invocable.java:159)
+	at org.glassfish.jersey.server.model.Invocable.create(Invocable.java:142)
+	at org.glassfish.jersey.server.model.ResourceMethod$Builder.createInvocable(ResourceMethod.java:457)
+	at org.glassfish.jersey.server.model.ResourceMethod$Builder.build(ResourceMethod.java:428)
+	at org.glassfish.jersey.server.model.Resource$Builder.processMethodBuilders(Resource.java:537)
+	at org.glassfish.jersey.server.model.Resource$Builder.buildResourceData(Resource.java:497)
+	at org.glassfish.jersey.server.model.Resource$Builder.build(Resource.java:529)
+	at org.glassfish.jersey.server.model.Resource.from(Resource.java:653)
+	at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:362)
+	at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:162)
+	at org.glassfish.jersey.server.ApplicationHandler$3.run(ApplicationHandler.java:287)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:289)
+	at org.glassfish.jersey.internal.Errors$2.call(Errors.java:286)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:286)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:284)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:302)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:167)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:349)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3954)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 3:38:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:38:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@9e3be16]
+jan 25, 2014 3:38:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:44:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:45:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6c55c579]
+jan 25, 2014 3:45:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:52:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:52:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5a4f55e6]
+jan 25, 2014 3:52:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 3:52:49 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [SpringJerseyApplication] in context with path [/petClinic] threw exception [org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User] with root cause
+org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1945)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1920)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:123)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:93)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1602)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at be.vdab.wim.pet.dao.UserDAO.getActiveUsers(UserDAO.java:22)
+	at be.vdab.wim.pet.service.UserService.getActiveUsers(UserService.java:21)
+	at be.vdab.wim.pet.service.UserService$$FastClassByCGLIB$$83903c5b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:698)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:631)
+	at be.vdab.wim.pet.service.UserService$$EnhancerByCGLIB$$83bcb6f9.getActiveUsers(<generated>)
+	at be.vdab.wim.pet.controller.UserController.getAllProducts(UserController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 3:55:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 3:55:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@a33a9e4]
+jan 25, 2014 3:55:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 4:05:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+jan 25, 2014 4:05:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@761df31a]
+jan 25, 2014 4:05:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+jan 25, 2014 4:06:02 PM org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [SpringJerseyApplication] in context with path [/petClinic] threw exception [org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User] with root cause
+org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1945)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1920)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:123)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:93)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1602)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at be.vdab.wim.pet.dao.UserDAO.getActiveUsers(UserDAO.java:21)
+	at be.vdab.wim.pet.service.UserService.getActiveUsers(UserService.java:21)
+	at be.vdab.wim.pet.service.UserService$$FastClassByCGLIB$$83903c5b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:698)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:631)
+	at be.vdab.wim.pet.service.UserService$$EnhancerByCGLIB$$9c535d82.getActiveUsers(<generated>)
+	at be.vdab.wim.pet.controller.UserController.getAllProducts(UserController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+

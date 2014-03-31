@@ -1,0 +1,70 @@
+jan 23, 2014 3:16:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 23, 2014 3:16:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 23, 2014 3:16:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:16:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:24:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 23, 2014 3:24:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 23, 2014 3:24:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:24:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/'
+jan 23, 2014 3:24:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context1244299166158585178.xml'
+jan 23, 2014 3:24:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/'
+jan 23, 2014 3:25:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:25:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/'
+jan 23, 2014 3:25:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context7971405309050771240.xml'
+jan 23, 2014 3:27:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:27:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/'
+jan 23, 2014 3:27:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context1030926584438622636.xml'
+jan 23, 2014 3:36:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:36:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/'
+jan 23, 2014 3:36:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context332469373946449995.xml'
+jan 23, 2014 3:36:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:36:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:40:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 23, 2014 3:40:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 23, 2014 3:40:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:40:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:43:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 23, 2014 3:43:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 23, 2014 3:43:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:43:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:43:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 23, 2014 3:43:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: init: Global resources are available
+jan 23, 2014 3:43:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: HTMLManager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:44:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 23, 2014 3:44:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/'
+jan 23, 2014 3:44:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/'

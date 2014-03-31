@@ -1,0 +1,306 @@
+feb 01, 2014 12:01:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:02:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7e298b12]
+feb 01, 2014 12:02:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:02:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:02:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@53bd370f]
+feb 01, 2014 12:02:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:06:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:06:32 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6cdab5e1]
+feb 01, 2014 12:06:32 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:06:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:06:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@48ba84d4]
+feb 01, 2014 12:06:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:07:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:07:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@4db2c77a]
+feb 01, 2014 12:07:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:07:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:07:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@54e3e12a]
+feb 01, 2014 12:07:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:07:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:07:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7f0985f8]
+feb 01, 2014 12:07:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:20:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:20:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@849c79c]
+feb 01, 2014 12:20:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:26:21 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:26:23 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3014fd04]
+feb 01, 2014 12:26:23 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:26:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:26:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@667182cf]
+feb 01, 2014 12:26:40 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:27:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:27:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@731a9ede]
+feb 01, 2014 12:27:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:29:26 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:29:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6d7177c5]
+feb 01, 2014 12:29:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:33:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:33:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@edda47a]
+feb 01, 2014 12:33:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:33:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:33:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5bebd606]
+feb 01, 2014 12:33:13 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:34:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:34:24 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5191abde]
+feb 01, 2014 12:34:24 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:34:41 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:34:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2dc26772]
+feb 01, 2014 12:34:43 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:34:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:34:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@c441932]
+feb 01, 2014 12:34:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:35:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:35:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@42147c8d]
+feb 01, 2014 12:35:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:35:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:35:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@47a6ba90]
+feb 01, 2014 12:35:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:35:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:35:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6b871c2b]
+feb 01, 2014 12:35:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:38:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:38:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7d67b7b8]
+feb 01, 2014 12:38:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:38:18 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:38:21 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@193481b4]
+feb 01, 2014 12:38:21 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:38:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:38:30 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2496b1d1]
+feb 01, 2014 12:38:30 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:39:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:39:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1a0fbde7]
+feb 01, 2014 12:39:31 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:40:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:40:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@9ba5fd7]
+feb 01, 2014 12:40:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 12:41:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 12:41:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@44db2eb7]
+feb 01, 2014 12:41:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:00:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:00:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3538aa65]
+feb 01, 2014 2:00:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:00:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:00:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1c4c1910]
+feb 01, 2014 2:01:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:02:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:02:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7cccadb]
+feb 01, 2014 2:02:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:03:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:03:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@51f87b15]
+feb 01, 2014 2:03:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:03:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:03:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@4fcff0bc]
+feb 01, 2014 2:03:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:04:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:04:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@4e0802a3]
+feb 01, 2014 2:04:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:20:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:20:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7ae15d9e]
+feb 01, 2014 2:20:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:22:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:22:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@2028382d]
+feb 01, 2014 2:22:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:22:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:22:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@58e2acc]
+feb 01, 2014 2:22:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:22:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:22:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@216ef2b3]
+feb 01, 2014 2:22:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:22:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:23:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@16e665b1]
+feb 01, 2014 2:23:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:23:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:23:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3eac190f]
+feb 01, 2014 2:23:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:23:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:23:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@13af6e74]
+feb 01, 2014 2:23:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:24:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:24:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@8a631d4]
+feb 01, 2014 2:24:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:24:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:24:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5a9dc409]
+feb 01, 2014 2:24:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:27:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:27:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@5ccbcc42]
+feb 01, 2014 2:27:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:30:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:30:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@45676d35]
+feb 01, 2014 2:30:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:33:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:33:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7ab863fd]
+feb 01, 2014 2:33:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:33:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:33:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@384a6c7e]
+feb 01, 2014 2:33:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:34:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:34:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1810cf7e]
+feb 01, 2014 2:34:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:35:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:35:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6c99a325]
+feb 01, 2014 2:35:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:38:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:38:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@543a1848]
+feb 01, 2014 2:38:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:42:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:42:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@576fbce9]
+feb 01, 2014 2:42:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:42:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 2:42:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1fd3a6d9]
+feb 01, 2014 2:42:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 01, 2014 2:44:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 01, 2014 4:38:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+feb 01, 2014 4:38:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

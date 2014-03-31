@@ -1,0 +1,408 @@
+mrt 31, 2014 11:38:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+mrt 31, 2014 11:38:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+mrt 31, 2014 11:38:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:38:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:38:05 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context1293045721958846023.xml'
+mrt 31, 2014 11:38:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:42:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:42:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:43:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:43:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/MeetingRoom'
+mrt 31, 2014 11:43:44 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:43:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:43:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:43:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:43:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context3307635798771235209.xml'
+mrt 31, 2014 11:43:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:46:52 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:46:52 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 11:47:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:47:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/MeetingRoom'
+mrt 31, 2014 11:47:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:47:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:47:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 11:48:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 11:48:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 11:48:38 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Manager: ManagerServlet.reload[/MeetingRoom]
+java.lang.IllegalStateException: Context with name [/MeetingRoom] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3970)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:954)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:363)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+mrt 31, 2014 11:48:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:48:49 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4250839132463120128.xml'
+mrt 31, 2014 11:48:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:48:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context5366378116759906224.xml'
+mrt 31, 2014 11:48:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:48:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:48:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context3692088227381210624.xml'
+mrt 31, 2014 11:49:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:06 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context7555883121026493301.xml'
+mrt 31, 2014 11:49:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context903738645501683713.xml'
+mrt 31, 2014 11:49:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context7495988017729482428.xml'
+mrt 31, 2014 11:49:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context3673336406287498051.xml'
+mrt 31, 2014 11:49:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:29 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:30 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context2484943179303709499.xml'
+mrt 31, 2014 11:49:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context6215195091072664408.xml'
+mrt 31, 2014 11:49:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:38 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4953099468835617934.xml'
+mrt 31, 2014 11:49:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context5324578417170177514.xml'
+mrt 31, 2014 11:49:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context8251456790026967355.xml'
+mrt 31, 2014 11:49:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:49:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:49:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context1617865159477533372.xml'
+mrt 31, 2014 11:50:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:50:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4078875954382649965.xml'
+mrt 31, 2014 11:50:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:50:03 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context6963521412718940716.xml'
+mrt 31, 2014 11:50:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:50:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context6274150123894116483.xml'
+mrt 31, 2014 11:50:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:50:19 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4101266638908150721.xml'
+mrt 31, 2014 11:50:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:50:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:51:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:51:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:51:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context8270154135812871796.xml'
+mrt 31, 2014 11:52:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:52:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:52:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:52:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context5293651750850517939.xml'
+mrt 31, 2014 11:52:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:53:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:53:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:53:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:53:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/MeetingRoom'
+mrt 31, 2014 11:53:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:54:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:54:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:54:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context5264891327018454356.xml'
+mrt 31, 2014 11:54:30 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 11:55:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:55:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 11:55:08 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 11:55:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context5931907278841676394.xml'
+mrt 31, 2014 11:55:12 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 12:01:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:01:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:01:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:01:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:01:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context8083451034973260888.xml'
+mrt 31, 2014 12:01:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 12:08:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 12:08:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:08:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context579828139658556540.xml'
+mrt 31, 2014 12:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:08:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:08:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context6322958214654357645.xml'
+mrt 31, 2014 12:09:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:09:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:09:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 12:10:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:10:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:15:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+mrt 31, 2014 12:15:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+mrt 31, 2014 12:15:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:15:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:15:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context212653580992936744.xml'
+mrt 31, 2014 12:50:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+mrt 31, 2014 12:50:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+mrt 31, 2014 12:50:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:50:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:50:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context8886189174960176634.xml'
+mrt 31, 2014 12:50:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 12:55:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:55:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 12:55:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 12:55:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4678990646631291649.xml'
+mrt 31, 2014 12:55:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 1:04:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:04:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/MeetingRoom'
+mrt 31, 2014 1:04:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MeetingRoom'
+mrt 31, 2014 1:10:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:10:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 1:11:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:11:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:11:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 1:11:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context4493210149497795189.xml'
+mrt 31, 2014 1:11:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:11:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:11:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MeetingRoom'
+mrt 31, 2014 1:11:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/kw/wqdjb_cj63lb1lv76c6pqrn80000gs/T/context1822027075474198813.xml'
+mrt 31, 2014 1:11:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+mrt 31, 2014 1:11:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MeetingRoom'
+mrt 31, 2014 1:11:45 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: Manager: ManagerServlet.reload[/MeetingRoom]
+java.lang.IllegalStateException: Context with name [/MeetingRoom] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3970)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:954)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:363)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+

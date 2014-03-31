@@ -1,0 +1,88 @@
+feb 05, 2014 9:21:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+feb 05, 2014 9:21:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+feb 05, 2014 9:21:35 AM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@40bc3d1e')
+feb 05, 2014 9:21:42 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@7a6a4b32]
+feb 05, 2014 9:21:42 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 11:26:53 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 11:27:02 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@8bae65b]
+feb 05, 2014 11:27:02 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 11:51:28 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 11:51:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@514caa09]
+feb 05, 2014 11:51:36 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 11:52:34 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 11:52:41 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@1b011edf]
+feb 05, 2014 11:52:41 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 11:52:51 AM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 11:52:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@4aa0a902]
+feb 05, 2014 11:52:55 AM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 12:08:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 12:08:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@3cad2d07]
+feb 05, 2014 12:08:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 12:08:57 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 12:09:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.glassfish.jersey.server.spring.SpringWebApplicationInitializer@6af81c02]
+feb 05, 2014 12:09:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+feb 05, 2014 1:38:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+feb 05, 2014 1:38:43 PM org.apache.catalina.core.StandardContext listenerStop
+SEVERE: Exception sending context destroyed event to listener instance of class org.springframework.web.context.ContextLoaderListener
+java.lang.NoClassDefFoundError: org/apache/log4j/spi/ThrowableInformation
+	at org.apache.log4j.spi.LoggingEvent.<init>(LoggingEvent.java:165)
+	at org.apache.log4j.Category.forcedLog(Category.java:391)
+	at org.apache.log4j.Category.log(Category.java:856)
+	at org.apache.commons.logging.impl.Log4JLogger.error(Log4JLogger.java:229)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:513)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:486)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:742)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:455)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1090)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1064)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1010)
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:559)
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:143)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4980)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5626)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:1028)
+	at org.apache.catalina.startup.HostConfig.deleteRedeployResources(HostConfig.java:1306)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1257)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1446)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:322)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1374)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1540)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1519)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.lang.ClassNotFoundException: org.apache.log4j.spi.ThrowableInformation
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 28 more
+
+feb 05, 2014 4:30:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+feb 05, 2014 4:30:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()

@@ -1,0 +1,663 @@
+jan 27, 2014 8:46:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 27, 2014 8:46:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 27, 2014 8:46:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 8:46:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 8:46:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/'
+jan 27, 2014 8:46:57 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 8:46:58 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context6344363217680372887.xml'
+jan 27, 2014 8:47:07 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 27, 2014 8:51:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 8:51:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 8:52:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 8:52:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 8:52:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context6120194260087618264.xml'
+jan 27, 2014 10:34:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 27, 2014 10:34:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 27, 2014 10:34:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 10:34:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 10:34:01 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 10:34:02 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context5875844966042455576.xml'
+jan 27, 2014 10:34:11 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 27, 2014 11:16:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 11:16:37 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:12:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:12:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:44:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:44:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:45:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:45:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:45:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:45:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:46:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:46:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:46:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:46:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:47:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:47:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:47:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:47:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:48:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:48:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:48:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:48:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:48:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:48:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:49:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:49:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:49:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:49:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:49:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:49:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:49:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:49:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:50:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:50:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:51:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:51:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:51:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:51:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:52:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:52:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:52:31 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:52:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:52:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:52:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:52:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 12:52:45 PM org.apache.catalina.core.ApplicationContext log
+SEVERE: Manager: ManagerServlet.reload[/petClinic]
+java.lang.IllegalStateException: Context with name [/petClinic] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3936)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 27, 2014 12:53:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context8803126480547559645.xml'
+jan 27, 2014 12:53:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context3283960393159943523.xml'
+jan 27, 2014 12:53:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context3707113116545657993.xml'
+jan 27, 2014 12:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context5073873853536221359.xml'
+jan 27, 2014 12:53:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:41 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context5642828108584381028.xml'
+jan 27, 2014 12:53:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:53:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:53:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context1826550189057188397.xml'
+jan 27, 2014 12:54:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:54:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:54:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:54:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context2598512436325430566.xml'
+jan 27, 2014 12:54:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:54:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:54:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:54:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context3354959480512427951.xml'
+jan 27, 2014 12:55:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:55:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:55:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:55:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context1603217830150896369.xml'
+jan 27, 2014 12:55:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:55:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:55:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:55:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context5307055895244337855.xml'
+jan 27, 2014 12:56:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:56:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 12:59:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+jan 27, 2014 12:59:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+jan 27, 2014 12:59:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:59:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 12:59:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context3100985354197953835.xml'
+jan 27, 2014 12:59:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 27, 2014 1:00:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:00:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:00:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 1:00:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context7217410992829824230.xml'
+jan 27, 2014 1:00:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 27, 2014 1:02:08 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:02:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:02:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:02:24 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:02:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:02:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:02:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:02:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:03:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:03:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:07:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:07:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:07:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:07:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:20:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:20:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:20:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:20:28 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:21:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:21:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:22:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:22:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:24:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:24:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:29:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:29:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:29:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:29:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:29:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:29:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:56:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:56:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:57:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:57:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 1:57:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 1:57:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:10:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:10:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:12:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:12:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:22:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:22:07 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:22:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:22:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:23:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:23:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:28:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:28:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:47:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:47:00 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:50:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:50:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:50:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:50:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:53:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:53:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 2:59:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 2:59:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:02:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:02:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:02:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:02:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:02:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:02:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:04:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:04:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:04:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 27, 2014 3:04:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context1887651134866552991.xml'
+jan 27, 2014 3:04:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 27, 2014 3:04:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:04:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:04:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:04:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:07:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:07:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:11:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:11:02 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:11:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:11:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:11:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:11:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:11:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:11:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:14:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:14:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:14:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:14:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:14:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:14:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:14:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:14:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:15:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:15:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:16:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:16:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:21:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:21:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:22:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:22:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:24:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:24:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:25:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:25:25 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:42:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:42:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:42:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:42:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:44:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:44:06 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:44:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:44:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:46:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:46:12 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:46:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:46:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:47:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:47:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:48:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:48:10 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:49:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:49:49 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:50:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:50:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:51:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:51:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:52:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:52:37 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:52:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:52:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:53:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:53:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:53:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:54:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:54:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:56:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:56:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:58:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:58:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:59:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:59:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:59:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:59:17 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:59:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:59:26 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 3:59:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 3:59:33 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:00:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:00:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:01:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:01:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:03:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:03:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:03:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:03:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:11:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:11:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:12:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:12:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:12:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:12:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:12:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:12:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:16:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:16:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:16:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:16:34 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:16:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:16:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:16:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:16:55 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:17:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:17:03 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:17:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:17:14 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:17:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:17:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:20:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:20:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:21:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:21:23 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:22:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:22:51 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:23:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:23:01 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:23:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:23:45 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:25:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:25:09 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:26:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:26:15 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:27:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:27:44 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:28:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:28:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 27, 2014 4:31:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 27, 2014 4:31:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'

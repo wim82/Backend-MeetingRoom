@@ -1,0 +1,15 @@
+be/kawi/meetingroom/model/Person.class
+be/rubus/shop/model/Customer.class
+be/rubus/shop/service/ProductService.class
+be/rubus/shop/model/OrderLine.class
+be/rubus/shop/dao/ProductDAO.class
+be/rubus/shop/service/SynchronizingFlag.class
+be/kawi/meetingroom/controller/TestController.class
+be/rubus/shop/exception/ShopException.class
+be/rubus/shop/exception/ProductNotChangedException.class
+be/kawi/meetingroom/MyApp.class
+be/rubus/shop/model/Product.class
+be/kawi/meetingroom/controller/ProductController.class
+be/kawi/meetingroom/model/PublicHoliday.class
+be/rubus/shop/model/Order.class
+be/kawi/meetingroom/service/HelloService.class

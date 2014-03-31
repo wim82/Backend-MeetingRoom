@@ -1,0 +1,230 @@
+jan 23, 2014 3:16:07 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 23, 2014 3:16:08 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:16:08 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:16:08 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1695 ms
+jan 23, 2014 3:16:08 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 23, 2014 3:16:08 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 23, 2014 3:16:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/docs
+jan 23, 2014 3:16:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/examples
+jan 23, 2014 3:16:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/host-manager
+jan 23, 2014 3:16:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/manager
+jan 23, 2014 3:16:10 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/ROOT
+jan 23, 2014 3:16:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:16:10 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:16:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2484 ms
+jan 23, 2014 3:19:34 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:19:34 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:19:34 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:24:06 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 23, 2014 3:24:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:24:07 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:24:07 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 965 ms
+jan 23, 2014 3:24:07 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 23, 2014 3:24:07 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 23, 2014 3:24:07 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/docs
+jan 23, 2014 3:24:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/examples
+jan 23, 2014 3:24:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/host-manager
+jan 23, 2014 3:24:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/manager
+jan 23, 2014 3:24:09 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/ROOT
+jan 23, 2014 3:24:09 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:24:09 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:24:09 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2140 ms
+jan 23, 2014 3:24:10 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context []
+jan 23, 2014 3:24:10 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:24:20 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:24:21 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+jan 23, 2014 3:25:56 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:25:57 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context []
+jan 23, 2014 3:25:57 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:25:57 PM org.apache.catalina.core.StandardContext setPath
+WARNING: A context path must either be an empty string or start with a '/'. The path [help] does not meet these criteria and has been changed to [/help]
+jan 23, 2014 3:26:01 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:27:49 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:27:50 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context []
+jan 23, 2014 3:27:50 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:27:56 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:36:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:36:05 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context []
+jan 23, 2014 3:36:05 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:36:11 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:40:01 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+jan 23, 2014 3:40:01 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:40:01 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:40:01 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+jan 23, 2014 3:40:01 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:40:02 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:40:07 PM org.apache.tomcat.util.net.AbstractEndpoint shutdownExecutor
+WARNING: The executor associated with thread pool [http-bio-8080] has not fully shutdown. Some application threads may still be running.
+jan 23, 2014 3:40:07 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:40:07 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:40:07 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:40:38 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 23, 2014 3:40:39 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:40:39 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:40:39 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 996 ms
+jan 23, 2014 3:40:39 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 23, 2014 3:40:39 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 23, 2014 3:40:39 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:40:48 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:40:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/docs
+jan 23, 2014 3:40:49 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/examples
+jan 23, 2014 3:40:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/host-manager
+jan 23, 2014 3:40:50 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/manager
+jan 23, 2014 3:40:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:40:50 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:40:50 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 11001 ms
+jan 23, 2014 3:42:45 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:42:45 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+jan 23, 2014 3:42:45 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:42:45 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:42:50 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 23, 2014 3:42:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:42:50 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:42:50 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 907 ms
+jan 23, 2014 3:42:50 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 23, 2014 3:42:50 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 23, 2014 3:42:50 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Documents/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 23, 2014 3:42:59 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:43:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/docs
+jan 23, 2014 3:43:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/examples
+jan 23, 2014 3:43:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/host-manager
+jan 23, 2014 3:43:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Documents/apache-tomcat-7.0.47/webapps/manager
+jan 23, 2014 3:43:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:43:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:43:00 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 10066 ms
+jan 23, 2014 3:44:14 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:44:20 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 23, 2014 3:44:20 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Reloading context []
+jan 23, 2014 3:44:21 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]] after start() had already been called. The second call will be ignored.
+jan 23, 2014 3:48:58 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+jan 23, 2014 3:48:58 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:48:58 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:48:58 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+jan 23, 2014 3:48:59 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 23, 2014 3:48:59 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:48:59 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+jan 23, 2014 3:48:59 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+jan 23, 2014 3:48:59 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

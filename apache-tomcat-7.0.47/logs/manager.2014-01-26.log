@@ -1,0 +1,40 @@
+jan 26, 2014 12:32:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:32:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+jan 26, 2014 12:33:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:33:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:33:42 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 26, 2014 12:33:43 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/t8/j8sr24b55j589r64ph1p9w240000gn/T/context4208139387576329496.xml'
+jan 26, 2014 12:33:47 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 26, 2014 12:35:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:35:11 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 26, 2014 12:36:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:36:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:36:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/t8/j8sr24b55j589r64ph1p9w240000gn/T/context7296762053063446940.xml'
+jan 26, 2014 12:37:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:37:50 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+jan 26, 2014 12:38:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:38:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:38:13 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/t8/j8sr24b55j589r64ph1p9w240000gn/T/context5051836651436003686.xml'
+jan 26, 2014 12:38:16 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+jan 26, 2014 12:38:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+jan 26, 2014 12:38:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'

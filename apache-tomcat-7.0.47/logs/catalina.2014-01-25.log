@@ -1,0 +1,763 @@
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/Studio/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 25, 2014 1:41:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:41:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:41:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1041 ms
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 25, 2014 1:41:00 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+jan 25, 2014 1:41:00 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+jan 25, 2014 1:41:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+jan 25, 2014 1:41:01 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+jan 25, 2014 1:41:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+jan 25, 2014 1:41:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+jan 25, 2014 1:41:02 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:41:02 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:41:02 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2088 ms
+jan 25, 2014 1:41:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 1:41:08 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:41:09 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after start() had already been called. The second call will be ignored.
+jan 25, 2014 1:45:05 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:45:05 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:45:10 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:45:11 PM org.glassfish.jersey.internal.Errors logErrors
+SEVERE: Following issues have been detected: 
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.pet.controller.TestController.getPerson() and public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+
+jan 25, 2014 1:45:11 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:45:39 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:45:39 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:45:43 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:45:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:45:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:45:44 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:45:48 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:45:48 PM org.glassfish.jersey.internal.Errors logErrors
+SEVERE: Following issues have been detected: 
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.util.List be.vdab.wim.controller.ProductController.getAllProducts() and public java.util.List be.vdab.wim.pet.controller.ProductController.getAllProducts() at matching regular expression /products. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.helloWorld() and public java.lang.String be.vdab.wim.pet.controller.TestController.helloWorld() at matching regular expression /hello. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method PUT and input mime-types as defined by @Consumes and @Produces annotations at Java methods public javax.ws.rs.core.Response be.vdab.wim.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.model.Person) and public javax.ws.rs.core.Response be.vdab.wim.pet.controller.TestController.updatePerson(java.lang.String,be.vdab.wim.pet.model.Person) at matching regular expression /person/([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public be.vdab.wim.model.Person be.vdab.wim.controller.TestController.getPerson() and public be.vdab.wim.pet.model.Person be.vdab.wim.pet.controller.TestController.getPerson() at matching regular expression /person. These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by @Consumes and @Produces annotations at Java methods public java.lang.String be.vdab.wim.controller.TestController.sayGreeting(java.lang.String) and public java.lang.String be.vdab.wim.pet.controller.TestController.sayGreeting(java.lang.String) at matching regular expression /([^/]+?). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+
+jan 25, 2014 1:45:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:46:19 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:46:19 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:46:23 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:46:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:46:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:46:23 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+jan 25, 2014 1:46:25 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+jan 25, 2014 1:46:26 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:52:22 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:52:22 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:52:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:53:32 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/Studio/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+jan 25, 2014 1:53:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:53:32 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:53:32 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 793 ms
+jan 25, 2014 1:53:33 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+jan 25, 2014 1:53:33 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+jan 25, 2014 1:53:33 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+jan 25, 2014 1:53:37 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/ROOT.xml
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+jan 25, 2014 1:53:37 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+jan 25, 2014 1:53:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+jan 25, 2014 1:53:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+jan 25, 2014 1:53:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+jan 25, 2014 1:53:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+jan 25, 2014 1:53:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+jan 25, 2014 1:53:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+jan 25, 2014 1:53:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5674 ms
+jan 25, 2014 1:53:39 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after stop() had already been called. The second call will be ignored.
+jan 25, 2014 1:53:39 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/petClinic]
+jan 25, 2014 1:53:39 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 1:53:42 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+jan 25, 2014 1:53:42 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+jan 25, 2014 1:55:24 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/petClinic]
+jan 25, 2014 1:55:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 1:55:24 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/Studio/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 1:55:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+jan 25, 2014 1:55:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+jan 25, 2014 1:55:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+jan 25, 2014 1:55:35 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after stop() had already been called. The second call will be ignored.
+jan 25, 2014 1:55:35 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/petClinic]
+jan 25, 2014 1:55:35 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 1:55:39 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:55:40 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after start() had already been called. The second call will be ignored.
+jan 25, 2014 1:56:36 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:56:36 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:56:41 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:56:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:57:31 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:57:31 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:57:35 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:57:36 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:57:56 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:57:56 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:58:00 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:58:00 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 1:58:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 1:58:10 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 1:58:14 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 1:58:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:00:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:00:11 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:00:18 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:00:19 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:00:19 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:00:19 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:00:22 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:00:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:08:35 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:08:36 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:08:43 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:08:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:18:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:18:39 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:18:46 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:18:46 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:19:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:19:12 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:19:16 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:19:16 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:26:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:26:29 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:26:37 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:26:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:28:30 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:28:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:28:34 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:28:34 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:29:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:29:41 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:29:45 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:29:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:29:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:29:58 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:30:02 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:30:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:31:13 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:31:13 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:31:17 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:31:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:54:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:54:22 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:54:33 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:54:33 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:56:42 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:56:42 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:56:46 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:56:46 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 2:56:56 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 2:56:57 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 2:57:00 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 2:57:01 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:20:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:20:22 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:20:33 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:20:34 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:21:24 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:21:24 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:21:28 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:21:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:21:32 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:21:32 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:21:36 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:21:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:21:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:21:37 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:21:40 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:21:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:22:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:22:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:22:52 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:22:52 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:22:52 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:22:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:22:56 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:22:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:23:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:23:12 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:23:16 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:23:16 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:24:46 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:24:46 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:24:50 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:24:50 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:25:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:25:03 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:25:07 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:25:07 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:25:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:25:08 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:25:12 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:25:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:25:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:25:12 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:25:16 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:25:16 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:26:06 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:26:06 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:26:10 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:26:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:27:04 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:27:04 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:27:07 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error listenerStart
+jan 25, 2014 3:27:07 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+jan 25, 2014 3:27:07 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:27:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:27:21 PM org.apache.catalina.util.LifecycleBase stop
+INFO: The stop() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after stop() had already been called. The second call will be ignored.
+jan 25, 2014 3:27:22 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/petClinic]
+jan 25, 2014 3:27:22 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 3:27:26 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:27:26 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after start() had already been called. The second call will be ignored.
+jan 25, 2014 3:27:30 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:27:30 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:27:34 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:27:35 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:28:46 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:28:46 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:28:50 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:28:50 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:30:55 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:30:55 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:30:59 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:31:00 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:32:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:32:48 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:32:52 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:32:52 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:32:52 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:32:52 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:32:56 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:32:56 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:33:14 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:33:14 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:33:18 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:33:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:36:20 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:36:20 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:36:24 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:36:24 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:36:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:36:37 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:36:41 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:36:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:36:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:36:41 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:36:45 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:36:46 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:37:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:37:43 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:37:47 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:37:47 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:38:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:38:10 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:38:14 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:38:14 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:44:55 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:44:56 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:45:07 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:45:07 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:52:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:52:37 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:52:40 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:52:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 3:52:49 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1945)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1920)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:123)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:93)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1602)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at be.vdab.wim.pet.dao.UserDAO.getActiveUsers(UserDAO.java:22)
+	at be.vdab.wim.pet.service.UserService.getActiveUsers(UserService.java:21)
+	at be.vdab.wim.pet.service.UserService$$FastClassByCGLIB$$83903c5b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:698)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:631)
+	at be.vdab.wim.pet.service.UserService$$EnhancerByCGLIB$$83bcb6f9.getActiveUsers(<generated>)
+	at be.vdab.wim.pet.controller.UserController.getAllProducts(UserController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+jan 25, 2014 3:55:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] has started
+jan 25, 2014 3:55:37 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 3:55:41 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 3:55:41 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/petClinic] is completed
+jan 25, 2014 4:05:44 PM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+SEVERE: The web application [/petClinic] registered the JDBC driver [org.h2.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+jan 25, 2014 4:05:45 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/petClinic]
+jan 25, 2014 4:05:45 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/Studio/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+jan 25, 2014 4:05:50 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+jan 25, 2014 4:05:51 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/petClinic]] after start() had already been called. The second call will be ignored.
+jan 25, 2014 4:06:02 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+org.hibernate.QueryException: could not resolve property: active of: be.vdab.wim.pet.model.User
+	at org.hibernate.persister.entity.AbstractPropertyMapping.propertyException(AbstractPropertyMapping.java:83)
+	at org.hibernate.persister.entity.AbstractPropertyMapping.toType(AbstractPropertyMapping.java:77)
+	at org.hibernate.persister.entity.AbstractEntityPersister.getSubclassPropertyTableNumber(AbstractEntityPersister.java:1945)
+	at org.hibernate.persister.entity.BasicEntityPropertyMapping.toColumns(BasicEntityPropertyMapping.java:61)
+	at org.hibernate.persister.entity.AbstractEntityPersister.toColumns(AbstractEntityPersister.java:1920)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getColumns(CriteriaQueryTranslator.java:523)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.findColumns(CriteriaQueryTranslator.java:538)
+	at org.hibernate.criterion.SimpleExpression.toSqlString(SimpleExpression.java:66)
+	at org.hibernate.loader.criteria.CriteriaQueryTranslator.getWhereCondition(CriteriaQueryTranslator.java:419)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:123)
+	at org.hibernate.loader.criteria.CriteriaJoinWalker.<init>(CriteriaJoinWalker.java:92)
+	at org.hibernate.loader.criteria.CriteriaLoader.<init>(CriteriaLoader.java:93)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1602)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:374)
+	at be.vdab.wim.pet.dao.UserDAO.getActiveUsers(UserDAO.java:21)
+	at be.vdab.wim.pet.service.UserService.getActiveUsers(UserService.java:21)
+	at be.vdab.wim.pet.service.UserService$$FastClassByCGLIB$$83903c5b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:698)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:96)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:260)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:94)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:631)
+	at be.vdab.wim.pet.service.UserService$$EnhancerByCGLIB$$9c535d82.getActiveUsers(<generated>)
+	at be.vdab.wim.pet.controller.UserController.getAllProducts(UserController.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+

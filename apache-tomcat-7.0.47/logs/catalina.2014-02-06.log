@@ -1,0 +1,956 @@
+feb 06, 2014 1:13:35 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+feb 06, 2014 1:13:35 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:13:36 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:13:36 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1065 ms
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+feb 06, 2014 1:13:36 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+feb 06, 2014 1:13:36 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+feb 06, 2014 1:13:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+feb 06, 2014 1:13:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+feb 06, 2014 1:13:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+feb 06, 2014 1:13:38 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+feb 06, 2014 1:13:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:13:38 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:13:38 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2484 ms
+feb 06, 2014 1:13:39 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:13:43 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:13:45 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/restStarter]] after start() had already been called. The second call will be ignored.
+feb 06, 2014 1:14:44 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/restStarter]
+feb 06, 2014 1:14:44 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:14:47 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:14:47 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/restStarter]] after start() had already been called. The second call will be ignored.
+feb 06, 2014 1:15:29 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+feb 06, 2014 1:15:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:15:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:15:29 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+feb 06, 2014 1:15:30 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:15:30 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:15:30 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:15:30 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:15:48 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+feb 06, 2014 1:15:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:15:48 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:15:48 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1056 ms
+feb 06, 2014 1:15:48 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+feb 06, 2014 1:15:48 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+feb 06, 2014 1:15:48 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+feb 06, 2014 1:15:49 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:15:49 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+feb 06, 2014 1:15:49 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+feb 06, 2014 1:15:49 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+feb 06, 2014 1:15:49 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:15:53 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:15:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+feb 06, 2014 1:15:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+feb 06, 2014 1:15:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+feb 06, 2014 1:15:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+feb 06, 2014 1:15:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:15:55 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:15:55 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6084 ms
+feb 06, 2014 1:15:56 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/restStarter]
+feb 06, 2014 1:15:56 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:15:59 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:16:00 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/restStarter]] after start() had already been called. The second call will be ignored.
+feb 06, 2014 1:18:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:18:48 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:18:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:19:00 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:19:02 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:19:02 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:19:35 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:19:37 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:19:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:20:13 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:20:15 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:20:16 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:21:11 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:21:14 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:21:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:22:04 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:22:05 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:22:06 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:22:07 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:22:08 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:22:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:22:47 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:22:50 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:22:50 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:23:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:23:13 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:23:14 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:23:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:23:58 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:23:59 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:24:22 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:24:24 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:24:24 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:26:14 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:26:15 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:26:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:40:09 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:40:11 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:40:11 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:40:32 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/restStarter]
+feb 06, 2014 1:40:32 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:40:33 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:40:33 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/restStarter]] after start() had already been called. The second call will be ignored.
+feb 06, 2014 1:44:10 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:44:11 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:44:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:44:29 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:44:31 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:44:31 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:44:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:44:39 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:44:40 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:44:46 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:44:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:44:54 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:44:55 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:47:59 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:48:01 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:48:01 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:48:09 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:48:11 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:48:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:48:19 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:48:21 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:48:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:52:49 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:53:48 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:55:00 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:55:02 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:55:02 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 1:55:25 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:56:00 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+feb 06, 2014 1:56:00 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:56:00 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:56:00 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+feb 06, 2014 1:56:01 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:56:01 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:56:01 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:56:01 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+feb 06, 2014 1:56:24 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:56:24 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:56:24 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 996 ms
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+feb 06, 2014 1:56:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+feb 06, 2014 1:56:24 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+feb 06, 2014 1:56:24 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:56:27 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:56:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+feb 06, 2014 1:56:28 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+feb 06, 2014 1:56:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+feb 06, 2014 1:56:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+feb 06, 2014 1:56:30 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 1:56:30 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 1:56:30 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5896 ms
+feb 06, 2014 1:56:32 PM org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/restStarter]
+feb 06, 2014 1:56:32 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 1:56:35 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:56:36 PM org.apache.catalina.util.LifecycleBase start
+INFO: The start() method was called on component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/restStarter]] after start() had already been called. The second call will be ignored.
+feb 06, 2014 1:56:53 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:57:11 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.NumberFormatException: null
+	at java.lang.Integer.parseInt(Integer.java:454)
+	at java.lang.Integer.parseInt(Integer.java:527)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 1:58:05 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 1:58:07 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 1:58:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 2:00:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 2:00:17 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 2:00:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 2:01:24 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 2:01:26 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 2:01:27 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 2:02:47 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 2:02:47 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 2:02:47 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Applications/NetBeans/NetBeans 7.4.app/Contents/Resources/NetBeans/webcommon/bin::/Users/jeansmits/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+feb 06, 2014 2:02:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 2:02:55 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 2:02:55 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1014 ms
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.47
+feb 06, 2014 2:02:55 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/petClinic.xml
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+java.lang.IllegalArgumentException: Document base /Users/jeansmits/Dropbox/Pet Clinic Project/petClinic/target/petClinic - 0.0.1-SNAPSHOT does not exist or is not a readable directory
+	at org.apache.naming.resources.FileDirContext.setDocBase(FileDirContext.java:138)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5055)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:663)
+	at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1642)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+feb 06, 2014 2:02:55 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/petClinic] startup failed due to previous errors
+feb 06, 2014 2:02:55 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/conf/Catalina/localhost/restStarter.xml
+feb 06, 2014 2:02:59 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 2:03:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/docs
+feb 06, 2014 2:03:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/examples
+feb 06, 2014 2:03:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/host-manager
+feb 06, 2014 2:03:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/jeansmits/Dropbox/Pet Clinic Project/apache-tomcat-7.0.47/webapps/manager
+feb 06, 2014 2:03:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 2:03:00 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 2:03:00 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 5236 ms
+feb 06, 2014 3:03:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:03:20 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:03:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:06:31 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:06:33 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:06:34 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:07:42 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:07:44 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:07:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:09:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:09:17 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:09:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:09:19 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:09:20 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:09:21 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:47:52 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:47:58 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:47:59 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:48:09 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:48:11 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:48:11 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:48:12 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:48:14 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:48:14 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:48:20 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:48:21 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:48:22 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:49:47 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:49:49 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:49:49 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:51:05 PM org.glassfish.jersey.server.ServerRuntime$Responder mapException
+WARNING: WebApplicationException cause:
+java.lang.ClassCastException: java.lang.Double cannot be cast to java.lang.String
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 06, 2014 3:52:01 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] has started
+feb 06, 2014 3:52:02 PM org.glassfish.jersey.server.ApplicationHandler initialize
+INFO: Initiating Jersey application, version Jersey: 2.4.1 2013-11-08 12:08:47...
+feb 06, 2014 3:52:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/restStarter] is completed
+feb 06, 2014 3:54:03 PM be.vdab.starter.controller.TestController updatePerson
+SEVERE: null
+javax.script.ScriptException: sun.org.mozilla.javascript.internal.EvaluatorException: missing ; before statement (<Unknown source>#1) in <Unknown source> at line number 1
+	at com.sun.script.javascript.RhinoScriptEngine.eval(RhinoScriptEngine.java:224)
+	at com.sun.script.javascript.RhinoScriptEngine.eval(RhinoScriptEngine.java:240)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at be.vdab.starter.controller.TestController.updatePerson(TestController.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:151)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:171)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:104)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:367)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:349)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:106)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:259)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:236)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:983)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:361)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: sun.org.mozilla.javascript.internal.EvaluatorException: missing ; before statement (<Unknown source>#1)
+	at sun.org.mozilla.javascript.internal.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:109)
+	at sun.org.mozilla.javascript.internal.DefaultErrorReporter.error(DefaultErrorReporter.java:96)
+	at sun.org.mozilla.javascript.internal.Parser.addError(Parser.java:231)
+	at sun.org.mozilla.javascript.internal.Parser.addError(Parser.java:209)
+	at sun.org.mozilla.javascript.internal.Parser.reportError(Parser.java:266)
+	at sun.org.mozilla.javascript.internal.Parser.reportError(Parser.java:253)
+	at sun.org.mozilla.javascript.internal.Parser.reportError(Parser.java:246)
+	at sun.org.mozilla.javascript.internal.Parser.autoInsertSemicolon(Parser.java:1110)
+	at sun.org.mozilla.javascript.internal.Parser.statementHelper(Parser.java:1087)
+	at sun.org.mozilla.javascript.internal.Parser.statement(Parser.java:944)
+	at sun.org.mozilla.javascript.internal.Parser.parse(Parser.java:569)
+	at sun.org.mozilla.javascript.internal.Parser.parse(Parser.java:531)
+	at sun.org.mozilla.javascript.internal.Context.compileImpl(Context.java:2438)
+	at sun.org.mozilla.javascript.internal.Context.compileReader(Context.java:1355)
+	at sun.org.mozilla.javascript.internal.Context.compileReader(Context.java:1327)
+	at sun.org.mozilla.javascript.internal.Context.evaluateReader(Context.java:1166)
+	at com.sun.script.javascript.RhinoScriptEngine.eval(RhinoScriptEngine.java:214)
+	... 47 more
+
+feb 06, 2014 4:19:06 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 4:19:07 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 4:19:07 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+feb 06, 2014 4:19:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 4:19:08 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+feb 06, 2014 4:19:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+feb 06, 2014 4:19:08 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]

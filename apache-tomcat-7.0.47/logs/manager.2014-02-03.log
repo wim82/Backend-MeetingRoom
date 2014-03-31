@@ -1,0 +1,127 @@
+feb 03, 2014 8:51:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+feb 03, 2014 8:51:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+feb 03, 2014 8:51:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 8:51:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 8:51:56 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context6519120988952430818.xml'
+feb 03, 2014 8:52:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+feb 03, 2014 8:52:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 8:53:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 8:53:25 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 8:57:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 8:57:20 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:00:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:00:50 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:03:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:03:39 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:03:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:03:54 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:20:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+feb 03, 2014 9:20:45 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+feb 03, 2014 9:20:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:20:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:20:46 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+feb 03, 2014 9:20:47 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context5761737206142703908.xml'
+feb 03, 2014 9:20:59 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+feb 03, 2014 9:36:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:36:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:36:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:36:48 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:44:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+feb 03, 2014 9:44:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+feb 03, 2014 9:44:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:44:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:44:09 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+feb 03, 2014 9:44:10 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context4105972477456488490.xml'
+feb 03, 2014 9:44:22 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+feb 03, 2014 9:45:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:45:00 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:47:14 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:47:15 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:47:15 AM org.apache.catalina.core.ApplicationContext log
+SEVERE: Manager: ManagerServlet.reload[/petClinic]
+java.lang.IllegalStateException: Context with name [/petClinic] has not yet been started
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3936)
+	at org.apache.catalina.manager.ManagerServlet.reload(ManagerServlet.java:956)
+	at org.apache.catalina.manager.ManagerServlet.doGet(ManagerServlet.java:365)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.filters.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:108)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:611)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+
+feb 03, 2014 9:47:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:47:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:47:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/petClinic'
+feb 03, 2014 9:47:17 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/var/folders/tb/h45t2jhs7zd651516qgh6llc0000gn/T/context6061489145265293219.xml'
+feb 03, 2014 9:47:27 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/petClinic'
+feb 03, 2014 9:50:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:50:16 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
+feb 03, 2014 9:51:41 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+feb 03, 2014 9:51:41 AM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/petClinic'
