@@ -22,6 +22,9 @@ public class MeetingRoomController {
     
     //commmentaar Katrien 
     
+    //meeting room controller
+    
+    //commentaar van wim 2
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<MeetingRoom> getMeetingRooms() {
