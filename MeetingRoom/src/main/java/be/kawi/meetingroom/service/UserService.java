@@ -44,4 +44,11 @@ public class UserService {
 
 	}
 
+	@Transactional
+	public User login(String fullName) {
+		User user = new User();
+		user.setFullName(fullName);
+		return login(user);
+	}
+
 }

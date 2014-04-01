@@ -5,11 +5,11 @@ import be.kawi.meetingroom.model.User;
 public class UserJSON {
 
 	private Integer userId;
-	private String userFullName;
+	private String fullName;
 	
 	public UserJSON(User user) {
 		this.userId=user.getUserId();
-		this.userFullName=user.getFullName();
+		this.fullName=user.getFullName();
 	}
 	
 	public UserJSON() {
@@ -23,12 +23,15 @@ public class UserJSON {
 	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
-	public String getUserFullName() {
-		return userFullName;
+
+	public String getFullName() {
+		return fullName;
 	}
-	public void setUserFullName(String userFullName) {
-		this.userFullName = userFullName;
+
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
+
 	
 	
 	

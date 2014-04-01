@@ -2,6 +2,7 @@ package be.kawi.meetingroom.controller;
 
 import be.kawi.meetingroom.exceptions.MeetingRoomException;
 import be.kawi.meetingroom.json.JSONWrapper;
+import be.kawi.meetingroom.json.UserJSON;
 import be.kawi.meetingroom.model.User;
 import be.kawi.meetingroom.service.UserService;
 
@@ -34,43 +35,43 @@ public class UserController {
 		JSONWrapper jsonData = new JSONWrapper();
 
 		List<User> users = new ArrayList<User>();
+		List<UserJSON> usersJSON = new ArrayList<UserJSON>();
 
 		try {
 			users = userService.getUsers();
+			for (User user : users) {
+				usersJSON.add(new UserJSON(user));	
+			}
 		} catch (MeetingRoomException e) {
 			jsonData.addMessage(e.getCustomMessage());
-			return Response.status(412).entity(jsonData).build();
+			return Response.status(412).entity(usersJSON).build();
 		}
 
 		jsonData.addData(users);
-		return Response.status(200).entity(jsonData).build();
+		return Response.status(200).entity(usersJSON).build();
 
 	}
 	
-	/*
+	
     @POST
-    @Path("check")
+    @Path("login")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Response login(User user) {
+    public Response login(UserJSON userJSON) {
     	
         JSONWrapper jsonData = new JSONWrapper();
-       User verifiedUser;
+        UserJSON result;
 
-      
         try {
-        
-        	verifiedUser = userService.login(user);
-        } catch (PetException e) {
-            jsonUser = new UserJSON();
-            jsonData.addData(jsonUser);
+        	result = new UserJSON(userService.login(userJSON.getFullName()));
+        } catch (MeetingRoomException e) {
             jsonData.addMessage(e.getCustomMessage());
             return Response.status(412).entity(jsonData).build();
         }
 
-        jsonData.addData(jsonUser);
-        return Response.ok(jsonData).build();
+        jsonData.addData(result);
+        return Response.status(200).entity(jsonData).build();
       
     }
-      */
+      
 }

@@ -2,6 +2,7 @@ package be.kawi.meetingroom.controller;
 
 import be.kawi.meetingroom.exceptions.MeetingRoomException;
 import be.kawi.meetingroom.json.JSONWrapper;
+import be.kawi.meetingroom.json.MeetingRoomJSON;
 import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.User;
 import be.kawi.meetingroom.service.MeetingRoomService;
@@ -28,16 +29,20 @@ public class MeetingRoomController {
     public Response getMeetingRooms() {
     	
 		JSONWrapper jsonData = new JSONWrapper();
-		List<MeetingRoom> meetingRooms = new ArrayList<MeetingRoom>();
+		List<MeetingRoom> meetingRooms;
+		List<MeetingRoomJSON> result = new ArrayList<MeetingRoomJSON>();
 
 		try {
 			meetingRooms = meetingRoomService.getMeetingRooms();
+			for (MeetingRoom meetingRoom : meetingRooms){
+				result.add(new MeetingRoomJSON(meetingRoom));
+			}
 		} catch (MeetingRoomException e) {
 			jsonData.addMessage(e.getCustomMessage());
 			return Response.status(412).entity(jsonData).build();
 		}
 
-		jsonData.addData(meetingRooms);
+		jsonData.addData(result);
 		return Response.status(200).entity(jsonData).build();
 
     }
