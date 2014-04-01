@@ -19,7 +19,9 @@ public class MeetingRoomController {
     @Autowired
     private MeetingRoomService meetingRoomService;
 
-    //meeting room controlller
+    //meeting room controller
+    
+    //commentaar van wim
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<MeetingRoom> getMeetingRooms() {
