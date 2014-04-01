@@ -43,7 +43,6 @@ public class User {
 		this.fullName = fullName;
 	}
 
-
 	public String getUserName() {
 		return userName;
 	}
