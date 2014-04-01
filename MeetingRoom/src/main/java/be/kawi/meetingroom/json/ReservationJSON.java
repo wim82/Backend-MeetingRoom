@@ -28,7 +28,7 @@ public class ReservationJSON {
 				.toDate();
 		this.reservationDescription = reservation.getReservationDescription();
 	}
-
+//dit is een test
 	public Integer getId() {
 		return id;
 	}
