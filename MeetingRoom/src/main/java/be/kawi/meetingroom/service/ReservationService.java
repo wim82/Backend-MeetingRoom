@@ -4,6 +4,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.joda.time.DateTime;
+import org.joda.time.LocalDate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,39 +32,14 @@ public class ReservationService {
 	public void createReservation() {
 		
 		Reservation reservation = new Reservation();
-	
-		SimpleDateFormat newDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		Date reservationDate=new Date();
-		try {
-			reservationDate = newDateFormat.parse("01/04/2014");
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		SimpleDateFormat newTimeFormat = new SimpleDateFormat("hh:mm");
-		Date reservationStartTime=new Date();
-		try {
-			reservationStartTime = newTimeFormat.parse("10:00");
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		Date reservationEndTime=new Date();
-		try {
-			reservationEndTime = newTimeFormat.parse("11:00");
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
+
 				   
-		reservation.setReservationDate(reservationDate);
-		reservation.setReservationStartTime(reservationStartTime);
-		reservation.setReservationEndTime(reservationEndTime);
+		reservation.setReservationDate(new DateTime(2014,05,06,0,0));
+		reservation.setReservationStartTime(new DateTime(1970,1,1,10,0,0));
+		reservation.setReservationEndTime(new DateTime(1970,1,1,14,0,0));
 		
 		reservation.setActive("Y");
-		
+		System.out.println("START TIJD" + reservation.getReservationStartTime().toString());
 		
 		MeetingRoom meetingRoom = new MeetingRoom();
 		meetingRoom.setRoomName("China");
