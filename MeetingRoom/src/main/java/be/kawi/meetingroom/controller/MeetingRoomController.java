@@ -22,6 +22,7 @@ public class MeetingRoomController {
     //meeting room controller
     
     //commentaar van wim 2
+    //nog meer commentaar
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<MeetingRoom> getMeetingRooms() {
