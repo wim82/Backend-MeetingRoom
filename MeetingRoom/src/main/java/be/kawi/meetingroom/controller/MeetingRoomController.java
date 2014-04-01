@@ -19,6 +19,9 @@ public class MeetingRoomController {
     @Autowired
     private MeetingRoomService meetingRoomService;
 
+    
+    //commmentaar Katrien 
+    
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<MeetingRoom> getMeetingRooms() {
