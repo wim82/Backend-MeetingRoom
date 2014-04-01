@@ -2,6 +2,9 @@ package be.kawi.meetingroom.json;
 
 import java.util.Date;
 
+import org.codehaus.jackson.annotate.JsonAutoDetect;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
 import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
@@ -9,8 +12,8 @@ import be.kawi.meetingroom.model.User;
 public class ReservationJSON {
 
 	private Integer id;
-	private UserJSON userJSON;
-	private MeetingRoomJSON meetingRoomJSON;
+	private UserJSON user;
+	private MeetingRoomJSON meetingRoom;
 	private Date reservationDate;
 	private Date reservationStartTime;
 	private Date reservationEndTime;
@@ -18,10 +21,10 @@ public class ReservationJSON {
 
 	public ReservationJSON(Reservation reservation) {
 		this.id = reservation.getReservationId();
-		this.userJSON = new UserJSON(reservation.getUser());
-		this.meetingRoomJSON = new MeetingRoomJSON(reservation.getMeetingRoom());
+		this.user = new UserJSON(reservation.getUser());
+		this.meetingRoom = new MeetingRoomJSON(reservation.getMeetingRoom());
 		this.reservationDate = reservation.getReservationDate().toDate();
-		System.out.println("reservationjson constructor"+reservation.getReservationDate().toDate().toString());
+		System.out.println("reservationjson constructor "+reservation.getReservationDate().toDate().toString());
 		this.reservationStartTime = reservation.getReservationStartTime()
 				.toDate();
 		this.reservationEndTime = reservation.getReservationEndTime()
@@ -39,21 +42,22 @@ public class ReservationJSON {
 
 	
 	public UserJSON getUserJSON() {
-		return userJSON;
+		return user;
 	}
 
-	public void setUserJSON(UserJSON userJSON) {
-		this.userJSON = userJSON;
+	public void setUserJSON(UserJSON user) {
+		this.user = user;
 	}
 
 	public MeetingRoomJSON getMeetingRoomJSON() {
-		return meetingRoomJSON;
+		return meetingRoom;
 	}
 
-	public void setMeetingRoomJSON(MeetingRoomJSON meetingRoomJSON) {
-		this.meetingRoomJSON = meetingRoomJSON;
+	public void setMeetingRoomJSON(MeetingRoomJSON meetingRoom) {
+		this.meetingRoom = meetingRoom;
 	}
 
+	//@JsonSerialize(using=JsonDateSerializer.class)
 	public Date getReservationDate() {
 		return reservationDate;
 	}
