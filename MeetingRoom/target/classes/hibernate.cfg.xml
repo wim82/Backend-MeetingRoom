@@ -9,5 +9,6 @@
 		<mapping class="be.kawi.meetingroom.model.PublicHoliday" />
 		<mapping class="be.kawi.meetingroom.model.MeetingRoom" />
 		<mapping class="be.kawi.meetingroom.model.User" />
+		<mapping class="be.kawi.meetingroom.model.Reservation" />
     </session-factory>
 </hibernate-configuration>
