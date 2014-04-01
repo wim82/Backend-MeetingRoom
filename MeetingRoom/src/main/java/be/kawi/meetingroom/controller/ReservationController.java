@@ -1,6 +1,5 @@
 package be.kawi.meetingroom.controller;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,9 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 
-
-
-
 import be.kawi.meetingroom.exceptions.MeetingRoomException;
 import be.kawi.meetingroom.json.JSONWrapper;
 import be.kawi.meetingroom.json.ReservationJSON;
@@ -27,28 +23,23 @@ import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
 import be.kawi.meetingroom.service.ReservationService;
 
-
 @Path("reservations")
 public class ReservationController {
 
 	@Autowired
 	private ReservationService reservationService;
-	
-	
+
 	@POST
 	@Path("/create")
-//	@Consumes(MediaType.APPLICATION_JSON)
 	public void createReservation() {
-		
-			//testing github
 		reservationService.createReservation();
-		
 	}
-	
+
 	@POST
 	@Path("/all")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
+
 	public Response getAllReservations(){
 		JSONWrapper jsonData = new JSONWrapper();
 		List <Reservation> reservations=new ArrayList<Reservation>();
@@ -70,6 +61,5 @@ public class ReservationController {
 		return Response.status(200).entity(jsonData).build();
 		
 	}
-	
-	
+
 }
