@@ -3,6 +3,7 @@ package be.kawi.meetingroom.service;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
@@ -65,9 +66,11 @@ public class ReservationService {
 		
 	}
 
-
 	
-	
+	@Transactional
+    public List<Reservation> getAllReservations() {
+        return reservationDAO.getAllReservations();
+    }
 	
 	
 	
