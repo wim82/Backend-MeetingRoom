@@ -41,6 +41,7 @@ public class ReservationJSON {
 		this.id = id;
 	}
 
+	
 	public UserJSON getUserJSON() {
 		return user;
 	}
