@@ -1,9 +1,22 @@
 package be.kawi.meetingroom.json;
 
+import be.kawi.meetingroom.model.User;
+
 public class UserJSON {
 
 	private Integer userId;
 	private String userFullName;
+	
+	public UserJSON(User user) {
+		this.userId=user.getUserId();
+		this.userFullName=user.getFullName();
+	}
+	
+	public UserJSON() {
+		super();
+	}
+	
+	
 	public Integer getUserId() {
 		return userId;
 	}
