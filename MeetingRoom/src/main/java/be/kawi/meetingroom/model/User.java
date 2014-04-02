@@ -26,6 +26,10 @@ public class User {
 
 	@Column(name = "ACTIVE")
 	private String active;
+	
+	public User(){
+		//empty constructor
+	}
 
 	public User(Integer id){
 		this.userId = id;
