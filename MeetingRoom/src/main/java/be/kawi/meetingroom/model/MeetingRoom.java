@@ -24,6 +24,17 @@ public class MeetingRoom {
 	@Column(name ="ACTIVE")
 	private String active;
 
+	public MeetingRoom(Integer id){
+		this.roomId = id;
+		this.roomName = null;
+		this.buildingName = null;
+		this.active = null;
+	}
+	
+	public MeetingRoom(){
+		
+	}
+	
 	public Integer getRoomId() {
 		return roomId;
 	}

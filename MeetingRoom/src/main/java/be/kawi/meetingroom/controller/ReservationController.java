@@ -16,30 +16,56 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 
 
+
+
+
 import be.kawi.meetingroom.exceptions.MeetingRoomException;
+import be.kawi.meetingroom.json.CreateReservationJSON;
 import be.kawi.meetingroom.json.JSONWrapper;
 import be.kawi.meetingroom.json.ReservationJSON;
+import be.kawi.meetingroom.json.UserJSON;
 import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
 import be.kawi.meetingroom.service.ReservationService;
+import be.kawi.meetingroom.service.UserService;
 
 @Path("reservations")
 public class ReservationController {
 
 	@Autowired
 	private ReservationService reservationService;
+	
+	@Autowired
+	private UserService userService;
 
 	@POST
-	@Path("/create")
-	public void createReservation() {
-		reservationService.createReservation();
-	}
+	@Path("/create")	
+	@Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response createReservation(ReservationJSON reservationJSON) {
+	
+        JSONWrapper jsonData = new JSONWrapper();
+        ReservationJSON result;
+       System.out.println("geraken we al tot hier");
+       
+            try {
+          System.out.println("geraken we door stap 1");
+          result = new ReservationJSON(reservationService.createReservation(reservationJSON));
+        	
+        } catch (MeetingRoomException e) {
+            jsonData.addMessage(e.getCustomMessage());
+            return Response.status(412).entity(jsonData).build();
+        }
+
+        jsonData.addData(result);
+        return Response.status(200).entity(jsonData).build();
+      
+    }
+     
 
 	@POST
 	@Path("/all")
-	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
-
 	public Response getAllReservations(){
 		JSONWrapper jsonData = new JSONWrapper();
 		List <Reservation> reservations=new ArrayList<Reservation>();
