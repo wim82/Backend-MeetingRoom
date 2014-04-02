@@ -1,10 +1,11 @@
 package be.kawi.meetingroom.model;
 
-
-import java.util.Date;
-
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "MEETINGROOMS")
@@ -20,21 +21,21 @@ public class MeetingRoom {
 
 	@Column(name = "BUILDING")
 	private String buildingName;
-	
-	@Column(name ="ACTIVE")
-	private String active;
 
-	public MeetingRoom(Integer id){
+	@Column(name = "ACTIVE")
+	private Boolean active;
+
+	public MeetingRoom(Integer id) {
 		this.roomId = id;
 		this.roomName = null;
 		this.buildingName = null;
 		this.active = null;
 	}
-	
-	public MeetingRoom(){
-		
+
+	public MeetingRoom() {
+
 	}
-	
+
 	public Integer getRoomId() {
 		return roomId;
 	}
@@ -59,15 +60,12 @@ public class MeetingRoom {
 		this.buildingName = buildingName;
 	}
 
-	public String getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public void setActive(String active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 
-
-
 }
-

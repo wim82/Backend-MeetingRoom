@@ -1,19 +1,15 @@
 package be.kawi.meetingroom.service;
 
-import be.kawi.meetingroom.dao.MeetingRoomDAO;
-import be.kawi.meetingroom.dao.PublicHolidayDAO;
-import be.kawi.meetingroom.dao.UserDAO;
-import be.kawi.meetingroom.exceptions.CorruptDatabaseException;
-import be.kawi.meetingroom.exceptions.NoSuchFullNameException;
-import be.kawi.meetingroom.model.MeetingRoom;
-import be.kawi.meetingroom.model.PublicHoliday;
-import be.kawi.meetingroom.model.User;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import be.kawi.meetingroom.dao.UserDAO;
+import be.kawi.meetingroom.exceptions.CorruptDatabaseException;
+import be.kawi.meetingroom.exceptions.NoSuchFullNameException;
+import be.kawi.meetingroom.model.User;
 
 @Service
 public class UserService {
@@ -35,15 +31,13 @@ public class UserService {
 		}
 
 		if (possibleUsers.size() > 1) {
-			throw new CorruptDatabaseException(
-					"There are 2 users with the same name in the database");
+			throw new CorruptDatabaseException("There are 2 users with the same name in the database");
 		}
 
 		User result = possibleUsers.get(0);
 		return result;
 
 	}
-
 
 	@Transactional
 	public User login(String fullName) {

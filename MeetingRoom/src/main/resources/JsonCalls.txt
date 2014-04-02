@@ -1,0 +1,44 @@
+JSON OBJECTS
+
+RESERVATIONS (ReservationJSON) -> to make a new one, to get an existing one
+{
+	"id":1,
+	"user":{
+		"userId":1,"fullName":null},
+		"meetingRoom":{ "roomId":1,
+						"roomName":null,
+						"buildingName":"main"},
+		"date":"20120606",
+		"startTime":"09:45",
+		"endTime":"11:78",
+		"description":"Tweede update op id 1"
+}
+
+USERS get user, all users gives an array
+{
+	"userId":1,
+	"fullName":"KatrienDeMey"
+}
+
+MEETINGROOMS
+{
+	"roomId":1,
+	"roomName":"China",
+	"buildingName":"main"
+}
+
+PUBLICHOLIDAYS get public holiday -> all holidays gives an array
+{
+	"holidayName":"New Year",
+	"holidayDate":"2014-01-01",
+	"id":1
+}
+
+REST URLS
+
+RESERVATION CONTROLLER /reservation/
+@Path("/create")
+@Path("/all")
+@Path("meetingroom/{roomId}/{date}/{amountOfDays}")
+returns all reservations for {roomId} / starting at {date} / for {amountOfDays}
+

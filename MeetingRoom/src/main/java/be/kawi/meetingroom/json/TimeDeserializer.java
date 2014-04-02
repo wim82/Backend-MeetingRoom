@@ -12,22 +12,17 @@ import org.codehaus.jackson.JsonProcessingException;
 import org.codehaus.jackson.map.DeserializationContext;
 import org.codehaus.jackson.map.JsonDeserializer;
 
+public class TimeDeserializer extends JsonDeserializer<Date> {
 
-
-public class TimeDeserializer extends JsonDeserializer<Date>{
-
-		@Override
-		public Date deserialize(JsonParser parser, DeserializationContext context)
-				throws IOException, JsonProcessingException {
-			DateFormat df = new SimpleDateFormat(DateUtil.TIME_FORMAT, Locale.ENGLISH);
-			try {
-				return df.parse(parser.getText());
-			} catch (ParseException e) {
-				return null;
-			}
+	@Override
+	public Date deserialize(JsonParser parser, DeserializationContext context) throws IOException,
+			JsonProcessingException {
+		DateFormat df = new SimpleDateFormat(DateUtil.TIME_FORMAT, Locale.ENGLISH);
+		try {
+			return df.parse(parser.getText());
+		} catch (ParseException e) {
+			return null;
 		}
-
 	}
 
-	
-
+}
