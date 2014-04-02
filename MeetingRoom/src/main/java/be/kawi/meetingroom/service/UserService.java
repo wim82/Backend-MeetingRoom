@@ -28,7 +28,7 @@ public class UserService {
 
 	@Transactional
 	public User login(User user) {
-		List<User> possibleUsers = userDAO.getActiveUsers(user);
+		List<User> possibleUsers = userDAO.getUser(user);
 
 		if (possibleUsers.isEmpty()) {
 			throw new NoSuchFullNameException();
@@ -43,6 +43,7 @@ public class UserService {
 		return result;
 
 	}
+
 
 	@Transactional
 	public User login(String fullName) {

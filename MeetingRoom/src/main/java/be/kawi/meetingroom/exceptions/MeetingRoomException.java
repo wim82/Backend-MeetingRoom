@@ -11,7 +11,9 @@ public class MeetingRoomException extends RuntimeException {
     private Message msg;
 
     public MeetingRoomException(String message) {
-        super(message);
+    	super(message);
+    	this.msg = new Message(message);
+      
     }
 
     public MeetingRoomException(Message msg) {

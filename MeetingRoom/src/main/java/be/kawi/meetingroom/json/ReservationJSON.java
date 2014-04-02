@@ -1,4 +1,4 @@
-package be.kawi.meetingroom.json;
+ package be.kawi.meetingroom.json;
 
 import java.util.Date;
 
@@ -6,6 +6,7 @@ import org.codehaus.jackson.annotate.JsonAutoDetect;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
+import org.joda.time.DateTime;
 import org.springframework.http.HttpStatus.Series;
 
 import be.kawi.meetingroom.model.MeetingRoom;
@@ -46,7 +47,6 @@ public class ReservationJSON {
 	public ReservationJSON() {
 		
 	}
-	
 
 	public Integer getId() {
 		return id;
@@ -104,5 +104,23 @@ public class ReservationJSON {
 	public void setReservationDescription(String reservationDescription) {
 		this.reservationDescription = reservationDescription;
 	}
+	
+	public Reservation convertToReservation(){
+		Reservation reservation = new Reservation();
+	
+		reservation.setReservationDescription(getReservationDescription());
+		reservation.setReservationDate(new DateTime(getReservationDate()));
+		reservation.setReservationStartTime(new DateTime(getReservationStartTime()));
+		reservation.setReservationEndTime(new DateTime(getReservationEndTime()));
+		reservation.setActive("Y");
+		
+		reservation.setMeetingRoom(new MeetingRoom(getMeetingRoom().getRoomId()));
+		
+		reservation.setUser(new User(getUser().getUserId()));
+
+		
+		return reservation;
+	}
+	
 
 }

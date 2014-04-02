@@ -21,7 +21,7 @@ public class UserDAO {
         return sessionFactory.getCurrentSession().createCriteria(User.class).list();
     }
     
-    public List<User> getActiveUsers(User user) {
+    public List<User> getUser(User user) {
         //TODO: implement more criteria if needed
         Criteria criteria = sessionFactory.getCurrentSession().createCriteria(User.class);
         criteria.add(Restrictions.eq("fullName", user.getFullName()));

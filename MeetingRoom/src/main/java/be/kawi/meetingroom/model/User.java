@@ -2,6 +2,7 @@ package be.kawi.meetingroom.model;
 
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -26,6 +27,9 @@ public class User {
 
 	@Column(name = "ACTIVE")
 	private String active;
+	
+	@OneToMany(mappedBy="user")
+	private List<Reservation> reservations;
 	
 	public User(){
 		//empty constructor

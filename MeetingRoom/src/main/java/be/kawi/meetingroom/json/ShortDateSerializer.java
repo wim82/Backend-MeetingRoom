@@ -10,7 +10,8 @@ import java.util.Locale;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.map.SerializerProvider;
-import org.codehaus.jackson.map.ser.SerializerBase;
+import org.codehaus.jackson.map.ser.std.SerializerBase;
+
 
 public class ShortDateSerializer extends SerializerBase<Date> {
 	
