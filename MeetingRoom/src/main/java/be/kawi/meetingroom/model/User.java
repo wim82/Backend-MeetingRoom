@@ -1,11 +1,14 @@
 package be.kawi.meetingroom.model;
 
-
-import java.util.Date;
 import java.util.List;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "USERS")
@@ -21,28 +24,28 @@ public class User {
 
 	@Column(name = "USERNAME")
 	private String userName;
-	
+
 	@Column(name = "PASSWORD")
 	private String password;
 
 	@Column(name = "ACTIVE")
-	private String active;
-	
-	@OneToMany(mappedBy="user")
+	private Boolean active;
+
+	@OneToMany(mappedBy = "user")
 	private List<Reservation> reservations;
-	
-	public User(){
-		//empty constructor
+
+	public User() {
+		// empty constructor
 	}
 
-	public User(Integer id){
+	public User(Integer id) {
 		this.userId = id;
 		this.fullName = null;
 		this.userName = null;
 		this.password = null;
 		this.active = null;
 	}
-	
+
 	public Integer getUserId() {
 		return userId;
 	}
@@ -75,15 +78,12 @@ public class User {
 		this.password = password;
 	}
 
-	public String getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public void setActive(String active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 
-	
-	
 }
-

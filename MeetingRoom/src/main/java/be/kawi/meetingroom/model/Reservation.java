@@ -30,25 +30,25 @@ public class Reservation {
 
 	@Column(name = "RESERVATION_DATE")
 	@Temporal(value = TemporalType.DATE)
-	private Date reservationDate;
+	private Date date;
 
 	@Column(name = "RESERVATION_STARTTIME")
 	@Temporal(value = TemporalType.TIME)
-	private Date reservationStartTime;
+	private Date startTime;
 
 	@Column(name = "RESERVATION_ENDTIME")
 	@Temporal(value = TemporalType.TIME)
-	private Date reservationEndTime;
+	private Date endTime;
 
 	@ManyToOne
 	@JoinColumn(name = "USER_ID")
 	private User user;
 
 	@Column(name = "RESERVATION_DESCRIPTION")
-	private String reservationDescription;
+	private String description;
 
 	@Column(name = "ACTIVE")
-	private String active;
+	private Boolean active;
 
 	public Integer getReservationId() {
 		return reservationId;
@@ -66,50 +66,50 @@ public class Reservation {
 		this.meetingRoom = meetingRoom;
 	}
 
-	public DateTime getReservationDate() {
-		if (reservationDate != null) {
+	public DateTime getDate() {
+		if (date != null) {
 			// new DateTime(date) would return the current date when (date ==
 			// null). We don't want that.
-			return new DateTime(reservationDate);
+			return new DateTime(date);
 		} else {
 			return null;
 		}
 	}
 
-	public void setReservationDate(DateTime reservationDate) {
-		this.reservationDate = reservationDate.toDate();
+	public void setDate(DateTime date) {
+		this.date = date.toDate();
 	}
 
-	public DateTime getReservationStartTime() {
-		if (reservationStartTime != null) {
+	public DateTime getStartTime() {
+		if (startTime != null) {
 			// new DateTime(date) would return the current date when (date ==
 			// null). We don't want that.
-			return new DateTime(reservationStartTime);
+			return new DateTime(startTime);
 		} else {
 			return null;
 		}
 	}
 
-	public void setReservationStartTime(DateTime reservationStartTime) {
-		
-		System.out.println("DATETIME ALS EM IN SETTER BINNENKOMT: " + reservationStartTime.toString());
-		this.reservationStartTime = reservationStartTime.toDate();
-		
-		System.out.println("STARTTIJD IN SETTER" + this.reservationStartTime.toString());
+	public void setStartTime(DateTime startTime) {
+
+		System.out.println("DATETIME ALS EM IN SETTER BINNENKOMT: " + startTime.toString());
+		this.startTime = startTime.toDate();
+
+		System.out.println("STARTTIJD IN SETTER" + this.startTime.toString());
 	}
 
-	public DateTime getReservationEndTime() {
-		if (reservationEndTime != null) {
+	public DateTime getEndTime() {
+		if (endTime != null) {
 			// new DateTime(date) would return the current date when (date ==
 			// null). We don't want that.
-			return new DateTime(reservationEndTime);
+			return new DateTime(endTime);
 		} else {
 			return null;
 		}
 	}
 
-	public void setReservationEndTime(DateTime reservationEndTime) {
-		this.reservationEndTime = reservationEndTime.toDate();
+	public void setEndTime(DateTime endTime) {
+		this.endTime = endTime.toDate();
 	}
 
 	public User getUser() {
@@ -120,19 +120,19 @@ public class Reservation {
 		this.user = user;
 	}
 
-	public String getReservationDescription() {
-		return reservationDescription;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setReservationDescription(String reservationDescription) {
-		this.reservationDescription = reservationDescription;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
-	public String getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public void setActive(String active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

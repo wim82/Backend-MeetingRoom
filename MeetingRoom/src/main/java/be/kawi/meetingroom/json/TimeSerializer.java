@@ -11,17 +11,15 @@ import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.map.SerializerProvider;
 import org.codehaus.jackson.map.ser.std.SerializerBase;
 
-
-
 public class TimeSerializer extends SerializerBase<Date> {
-	
+
 	protected TimeSerializer() {
 		super(Date.class);
 	}
 
 	@Override
-	public void serialize(Date date, JsonGenerator generator, SerializerProvider provider)
-			throws IOException, JsonGenerationException {
+	public void serialize(Date date, JsonGenerator generator, SerializerProvider provider) throws IOException,
+			JsonGenerationException {
 		DateFormat df = new SimpleDateFormat(DateUtil.TIME_FORMAT, Locale.ENGLISH);
 		generator.writeString(df.format(date));
 	}

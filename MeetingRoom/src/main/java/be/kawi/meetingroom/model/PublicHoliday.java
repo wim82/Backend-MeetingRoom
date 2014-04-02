@@ -1,10 +1,15 @@
 package be.kawi.meetingroom.model;
 
-
 import java.util.Date;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "PUBLICHOLIDAYS")
@@ -45,7 +50,5 @@ public class PublicHoliday {
 	public void setHolidayDate(Date holidayDate) {
 		this.holidayDate = holidayDate;
 	}
-
-
 
 }

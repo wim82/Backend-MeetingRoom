@@ -6,20 +6,20 @@ public class UserJSON {
 
 	private Integer userId;
 	private String fullName;
-	
+
 	public UserJSON(User user) {
-		this.userId=user.getUserId();
-		this.fullName=user.getFullName();
+		this.userId = user.getUserId();
+		this.fullName = user.getFullName();
 	}
-	
+
 	public UserJSON() {
 		super();
 	}
-	
-	
+
 	public Integer getUserId() {
 		return userId;
 	}
+
 	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
@@ -32,7 +32,4 @@ public class UserJSON {
 		this.fullName = fullName;
 	}
 
-	
-	
-	
 }

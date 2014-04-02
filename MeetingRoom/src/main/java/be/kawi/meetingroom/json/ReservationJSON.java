@@ -1,13 +1,10 @@
- package be.kawi.meetingroom.json;
+package be.kawi.meetingroom.json;
 
 import java.util.Date;
 
-import org.codehaus.jackson.annotate.JsonAutoDetect;
-import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.annotate.JsonDeserialize;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 import org.joda.time.DateTime;
-import org.springframework.http.HttpStatus.Series;
 
 import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.Reservation;
@@ -18,34 +15,33 @@ public class ReservationJSON {
 	private Integer id;
 	private UserJSON user;
 	private MeetingRoomJSON meetingRoom;
-	
-	@JsonSerialize(using=ShortDateSerializer.class)
-	@JsonDeserialize(using=ShortDateDeserializer.class)
-	private Date reservationDate;
-	
-	@JsonSerialize(using=TimeSerializer.class)
-	@JsonDeserialize(using=TimeDeserializer.class)
-	private Date reservationStartTime;
-	
-	@JsonSerialize(using=TimeSerializer.class)
-	@JsonDeserialize(using=TimeDeserializer.class)
-	private Date reservationEndTime;
-	private String reservationDescription;
+
+	@JsonSerialize(using = ShortDateSerializer.class)
+	@JsonDeserialize(using = ShortDateDeserializer.class)
+	private Date date;
+
+	@JsonSerialize(using = TimeSerializer.class)
+	@JsonDeserialize(using = TimeDeserializer.class)
+	private Date startTime;
+
+	@JsonSerialize(using = TimeSerializer.class)
+	@JsonDeserialize(using = TimeDeserializer.class)
+	private Date endTime;
+
+	private String description;
 
 	public ReservationJSON(Reservation reservation) {
 		this.id = reservation.getReservationId();
 		this.user = new UserJSON(reservation.getUser());
 		this.meetingRoom = new MeetingRoomJSON(reservation.getMeetingRoom());
-		this.reservationDate = reservation.getReservationDate().toDate();
-		this.reservationStartTime = reservation.getReservationStartTime()
-				.toDate();
-		this.reservationEndTime = reservation.getReservationEndTime()
-				.toDate();
-		this.reservationDescription = reservation.getReservationDescription();
+		this.date = reservation.getDate().toDate();
+		this.startTime = reservation.getStartTime().toDate();
+		this.endTime = reservation.getEndTime().toDate();
+		this.description = reservation.getDescription();
 	}
-	
+
 	public ReservationJSON() {
-		
+
 	}
 
 	public Integer getId() {
@@ -72,55 +68,51 @@ public class ReservationJSON {
 		this.meetingRoom = meetingRoom;
 	}
 
-	
-	public Date getReservationDate() {
-		return reservationDate;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setReservationDate(Date reservationDate) {
-		this.reservationDate = reservationDate;
+	public void setDate(Date reservationDate) {
+		this.date = reservationDate;
 	}
 
-	public Date getReservationStartTime() {
-		return reservationStartTime;
+	public Date getStartTime() {
+		return startTime;
 	}
 
-	public void setReservationStartTime(Date reservationStartTime) {
-		this.reservationStartTime = reservationStartTime;
+	public void setStartTime(Date reservationStartTime) {
+		this.startTime = reservationStartTime;
 	}
 
-	public Date getReservationEndTime() {
-		return reservationEndTime;
+	public Date getEndTime() {
+		return endTime;
 	}
 
-	public void setReservationEndTime(Date reservationEndTime) {
-		this.reservationEndTime = reservationEndTime;
+	public void setEndTime(Date reservationEndTime) {
+		this.endTime = reservationEndTime;
 	}
 
-	public String getReservationDescription() {
-		return reservationDescription;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setReservationDescription(String reservationDescription) {
-		this.reservationDescription = reservationDescription;
+	public void setDescription(String reservationDescription) {
+		this.description = reservationDescription;
 	}
-	
-	public Reservation convertToReservation(){
+
+	public Reservation convertToReservation() {
 		Reservation reservation = new Reservation();
-	
-		reservation.setReservationDescription(getReservationDescription());
-		reservation.setReservationDate(new DateTime(getReservationDate()));
-		reservation.setReservationStartTime(new DateTime(getReservationStartTime()));
-		reservation.setReservationEndTime(new DateTime(getReservationEndTime()));
-		reservation.setActive("Y");
-		
+		reservation.setDescription(getDescription());
+		reservation.setDate(new DateTime(getDate()));
+		reservation.setStartTime(new DateTime(getStartTime()));
+		reservation.setEndTime(new DateTime(getEndTime()));
+		reservation.setActive(true);
+		reservation.setReservationId(getId());
+
 		reservation.setMeetingRoom(new MeetingRoom(getMeetingRoom().getRoomId()));
-		
 		reservation.setUser(new User(getUser().getUserId()));
 
-		
 		return reservation;
 	}
-	
 
 }
