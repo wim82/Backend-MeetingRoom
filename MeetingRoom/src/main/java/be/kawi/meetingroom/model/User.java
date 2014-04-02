@@ -27,6 +27,14 @@ public class User {
 	@Column(name = "ACTIVE")
 	private String active;
 
+	public User(Integer id){
+		this.userId = id;
+		this.fullName = null;
+		this.userName = null;
+		this.password = null;
+		this.active = null;
+	}
+	
 	public Integer getUserId() {
 		return userId;
 	}

@@ -13,11 +13,11 @@ import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
 
 
-public class ReservationJSON {
+public class CreateReservationJSON {
 
 	private Integer id;
-	private UserJSON user;
-	private MeetingRoomJSON meetingRoom;
+	private Integer userId;
+	private String roomName;
 	
 	@JsonSerialize(using=ShortDateSerializer.class)
 	@JsonDeserialize(using=ShortDateDeserializer.class)
@@ -32,22 +32,9 @@ public class ReservationJSON {
 	private Date reservationEndTime;
 	private String reservationDescription;
 
-	public ReservationJSON(Reservation reservation) {
-		this.id = reservation.getReservationId();
-		this.user = new UserJSON(reservation.getUser());
-		this.meetingRoom = new MeetingRoomJSON(reservation.getMeetingRoom());
-		this.reservationDate = reservation.getReservationDate().toDate();
-		this.reservationStartTime = reservation.getReservationStartTime()
-				.toDate();
-		this.reservationEndTime = reservation.getReservationEndTime()
-				.toDate();
-		this.reservationDescription = reservation.getReservationDescription();
-	}
-	
-	public ReservationJSON() {
+	public CreateReservationJSON() {
 		
 	}
-	
 
 	public Integer getId() {
 		return id;
@@ -57,23 +44,22 @@ public class ReservationJSON {
 		this.id = id;
 	}
 
-	public UserJSON getUser() {
-		return user;
+	public Integer getUserId() {
+		return userId;
 	}
 
-	public void setUser(UserJSON user) {
-		this.user = user;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
-	public MeetingRoomJSON getMeetingRoom() {
-		return meetingRoom;
+	public String getRoomName() {
+		return roomName;
 	}
 
-	public void setMeetingRoom(MeetingRoomJSON meetingRoom) {
-		this.meetingRoom = meetingRoom;
+	public void setRoomName(String roomName) {
+		this.roomName = roomName;
 	}
 
-	
 	public Date getReservationDate() {
 		return reservationDate;
 	}
@@ -106,4 +92,7 @@ public class ReservationJSON {
 		this.reservationDescription = reservationDescription;
 	}
 
+	
+
 }
+
