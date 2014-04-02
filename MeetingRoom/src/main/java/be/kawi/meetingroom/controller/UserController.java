@@ -44,11 +44,11 @@ public class UserController {
 			}
 		} catch (MeetingRoomException e) {
 			jsonData.addMessage(e.getCustomMessage());
-			return Response.status(412).entity(usersJSON).build();
+			return Response.status(412).entity(jsonData).build();
 		}
 
-		jsonData.addData(users);
-		return Response.status(200).entity(usersJSON).build();
+		jsonData.addData(usersJSON);
+		return Response.status(200).entity(jsonData).build();
 
 	}
 	
