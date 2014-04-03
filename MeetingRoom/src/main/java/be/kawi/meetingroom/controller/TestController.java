@@ -49,16 +49,21 @@ public class TestController {
 	@Path("/get")
 	public Response testCall(@HeaderParam("x-authentication") String xAuthentication) {
 
-		return Response.status(200).entity("testCall is called, header parameter x-authentication bevat: " + xAuthentication).build();
-
+		if (isMD5HashValid(xAuthentication)){
+		return Response.status(200).entity("testCall is called, valid MD5Hash. header parameter x-authentication bevat: " + xAuthentication).build();
+		}
+		else {
+			return Response.status(412).entity("you are illegal. Get off this server").build();
+		}
 	}
 
 	
 	//methode om de gekregen MD5Hash vd app, te vergelijken met de server MD5Hash.
-	//is nog niet volledig klaar
+	
 	
 	 public boolean isMD5HashValid(String incomingMD5hash){
 		 JavaMD5Hash javaMD5Hash = new JavaMD5Hash();
+		 Boolean result=false;
 		 Date date=new Date();
 		 SimpleDateFormat dateFormatyyyyMMdd = new SimpleDateFormat("yyyyMMdd");
 		 String today=dateFormatyyyyMMdd.format(date);
@@ -66,7 +71,11 @@ public class TestController {
 		 
 		 String comparisonMD5Hash = javaMD5Hash.md5("MobileApps2013 "+today);
 		 
-		 return true;
+		 if (comparisonMD5Hash.equals(incomingMD5hash)){
+			 result=true;
+		 }
+		 
+		 return result;
 	 }
 
 }
