@@ -13,6 +13,7 @@ import be.kawi.meetingroom.exceptions.CorruptDatabaseException;
 import be.kawi.meetingroom.exceptions.NoSuchReservationException;
 import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.Reservation;
+import be.kawi.meetingroom.model.User;
 
 @Service
 public class ReservationService {
@@ -67,6 +68,12 @@ public class ReservationService {
 	public List<Reservation> getReservationByRoomId(Integer roomId) {
 		MeetingRoom room = new MeetingRoom(roomId);
 		return reservationDAO.getReservationByRoom(room);
+	}
+	
+	@Transactional
+	public List<Reservation> getReservationByUserId(Integer userId) {
+		User user = new User(userId);
+		return reservationDAO.getReservationByUser(user);
 	}
 
 	@Transactional

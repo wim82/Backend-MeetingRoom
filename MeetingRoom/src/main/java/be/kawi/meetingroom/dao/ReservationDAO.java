@@ -5,12 +5,14 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.Reservation;
+import be.kawi.meetingroom.model.User;
 
 @Repository
 public class ReservationDAO {
@@ -36,6 +38,8 @@ public class ReservationDAO {
 		// note the ge & lt. they're intended
 		criteria.add(Restrictions.ge("date", startDate));
 		criteria.add(Restrictions.lt("date", endDate));
+		criteria.addOrder(Order.asc("date"));
+		criteria.addOrder(Order.asc("startTime"));
 
 		return criteria.list();
 	}
@@ -43,6 +47,16 @@ public class ReservationDAO {
 	public List<Reservation> getReservationByRoom(MeetingRoom room) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 		criteria.add(Restrictions.eq("meetingRoom", room));
+		criteria.addOrder(Order.asc("date"));
+		criteria.addOrder(Order.asc("startTime"));
+		return criteria.list();
+	}
+	
+	public List<Reservation> getReservationByUser(User user) {
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.add(Restrictions.eq("user", user));
+		criteria.addOrder(Order.asc("date"));
+		criteria.addOrder(Order.asc("startTime"));
 		return criteria.list();
 	}
 
@@ -52,7 +66,10 @@ public class ReservationDAO {
 	}
 
 	public List<Reservation> getAllReservations() {
-		return sessionFactory.getCurrentSession().createCriteria(Reservation.class).list();
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.addOrder(Order.asc("date"));
+		criteria.addOrder(Order.asc("startTime"));
+		return criteria.list();
 	}
 
 }

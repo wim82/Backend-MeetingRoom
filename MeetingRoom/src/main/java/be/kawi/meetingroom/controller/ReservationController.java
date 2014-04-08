@@ -125,6 +125,38 @@ public class ReservationController {
 		return Response.status(200).entity(jsonData).build();
 
 	}
+	
+	/**
+	 * Gets all reservations ever for a certain MeetingRoom
+	 * 
+	 * @param roomId
+	 * @return
+	 */
+	@GET
+	@Path("user/{userId}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getReservationByUserId(@PathParam(value = "userId") Integer userId) {
+		System.out.println("IN DE JUISTE CONTROLLER MET userId:  " + userId);
+		JSONWrapper jsonData = new JSONWrapper();
+		List<Reservation> reservations = new ArrayList<Reservation>();
+		List<ReservationJSON> jsonReservations = new ArrayList<ReservationJSON>();
+
+		try {
+			reservations = reservationService.getReservationByUserId(userId);
+			for (Reservation reservation : reservations) {
+				jsonReservations.add(new ReservationJSON(reservation));
+			}
+
+		} catch (MeetingRoomException e) {
+			jsonData.addMessage(e.getCustomMessage());
+			return Response.status(412).entity(jsonData).build();
+		}
+
+		jsonData.addData(jsonReservations);
+		return Response.status(200).entity(jsonData).build();
+
+	}
+
 
 	/**
 	 * 
