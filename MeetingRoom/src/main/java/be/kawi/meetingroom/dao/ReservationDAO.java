@@ -37,9 +37,8 @@ public class ReservationDAO {
 		}
 
 		// note the ge & lt. they're intended
-		criteria.add(Restrictions.ge("date", startDate));
-		criteria.add(Restrictions.lt("date", endDate));
-		criteria.addOrder(Order.asc("date"));
+		criteria.add(Restrictions.ge("startTime", startDate));
+		criteria.add(Restrictions.lt("endTime", endDate));
 		criteria.addOrder(Order.asc("startTime"));
 
 		return criteria.list();
