@@ -67,7 +67,7 @@ public class ReservationDAO {
 
 	public List<Reservation> getAllReservations() {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
-		criteria.addOrder(Order.asc("date"));
+		//criteria.addOrder(Order.asc("date"));
 		criteria.addOrder(Order.asc("startTime"));
 		return criteria.list();
 	}

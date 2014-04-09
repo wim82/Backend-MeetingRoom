@@ -28,16 +28,16 @@ public class Reservation {
 	@JoinColumn(name = "ROOM_ID")
 	private MeetingRoom meetingRoom;
 
-	@Column(name = "RESERVATION_DATE")
-	@Temporal(value = TemporalType.DATE)
-	private Date date;
+//	@Column(name = "RESERVATION_DATE")
+//	@Temporal(value = TemporalType.DATE)
+//	private Date date;
 
 	@Column(name = "RESERVATION_STARTTIME")
-	@Temporal(value = TemporalType.TIME)
+	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date startTime;
 
 	@Column(name = "RESERVATION_ENDTIME")
-	@Temporal(value = TemporalType.TIME)
+	@Temporal(value = TemporalType.TIMESTAMP)
 	private Date endTime;
 
 	@ManyToOne
@@ -66,7 +66,7 @@ public class Reservation {
 		this.meetingRoom = meetingRoom;
 	}
 
-	public DateTime getDate() {
+/*	public DateTime getDate() {
 		if (date != null) {
 			// new DateTime(date) would return the current date when (date ==
 			// null). We don't want that.
@@ -79,12 +79,15 @@ public class Reservation {
 	public void setDate(DateTime date) {
 		this.date = date.toDate();
 	}
-
+*/
+	
 	public DateTime getStartTime() {
 		if (startTime != null) {
 			// new DateTime(date) would return the current date when (date ==
 			// null). We don't want that.
+			System.out.println(new DateTime(startTime));
 			return new DateTime(startTime);
+
 		} else {
 			return null;
 		}

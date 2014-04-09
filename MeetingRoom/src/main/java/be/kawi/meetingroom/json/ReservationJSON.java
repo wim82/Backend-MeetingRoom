@@ -16,9 +16,9 @@ public class ReservationJSON {
 	private UserJSON user;
 	private MeetingRoomJSON meetingRoom;
 
-	@JsonSerialize(using = ShortDateSerializer.class)
-	@JsonDeserialize(using = ShortDateDeserializer.class)
-	private Date date;
+//	@JsonSerialize(using = ShortDateSerializer.class)
+//	@JsonDeserialize(using = ShortDateDeserializer.class)
+//	private Date date;
 
 	@JsonSerialize(using = TimeSerializer.class)
 	@JsonDeserialize(using = TimeDeserializer.class)
@@ -34,7 +34,7 @@ public class ReservationJSON {
 		this.id = reservation.getReservationId();
 		this.user = new UserJSON(reservation.getUser());
 		this.meetingRoom = new MeetingRoomJSON(reservation.getMeetingRoom());
-		this.date = reservation.getDate().toDate();
+	//	this.date = reservation.getDate().toDate();
 		this.startTime = reservation.getStartTime().toDate();
 		this.endTime = reservation.getEndTime().toDate();
 		this.description = reservation.getDescription();
@@ -68,14 +68,14 @@ public class ReservationJSON {
 		this.meetingRoom = meetingRoom;
 	}
 
-	public Date getDate() {
+/*	public Date getDate() {
 		return date;
 	}
 
 	public void setDate(Date reservationDate) {
 		this.date = reservationDate;
 	}
-
+*/
 	public Date getStartTime() {
 		return startTime;
 	}
@@ -103,7 +103,7 @@ public class ReservationJSON {
 	public Reservation convertToReservation() {
 		Reservation reservation = new Reservation();
 		reservation.setDescription(getDescription());
-		reservation.setDate(new DateTime(getDate()));
+	//	reservation.setDate(new DateTime(getDate()));
 		reservation.setStartTime(new DateTime(getStartTime()));
 		reservation.setEndTime(new DateTime(getEndTime()));
 		reservation.setActive(true);

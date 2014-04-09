@@ -17,7 +17,7 @@ public class DateUtil {
 
 	public static final String SHORT_DATE_FORMAT = "yyyyMMdd";
 	public static final String LONG_DATE_FORMAT = "EEEE dd MMMM yyyy";
-	public static final String TIME_FORMAT = "HH:mm";
+	public static final String TIME_FORMAT = "yyyyMMdd HH:mm";
 
 	/*
 	 * Returns the next workday after today Sunday is not a workday
