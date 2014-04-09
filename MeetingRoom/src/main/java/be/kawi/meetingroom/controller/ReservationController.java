@@ -127,7 +127,7 @@ public class ReservationController {
 	}
 	
 	/**
-	 * Gets all reservations ever for a certain MeetingRoom
+	 * Gets all reservations ever for a certain User
 	 * 
 	 * @param roomId
 	 * @return
