@@ -28,6 +28,7 @@ public class ReservationDAO {
 		return criteria.list();
 	}
 
+	//FIX THIS
 	public List<Reservation> getReservations(MeetingRoom room, Date startDate, Date endDate) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 
@@ -47,7 +48,7 @@ public class ReservationDAO {
 	public List<Reservation> getReservationByRoom(MeetingRoom room) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 		criteria.add(Restrictions.eq("meetingRoom", room));
-		criteria.addOrder(Order.asc("date"));
+		
 		criteria.addOrder(Order.asc("startTime"));
 		return criteria.list();
 	}
@@ -55,7 +56,7 @@ public class ReservationDAO {
 	public List<Reservation> getReservationByUser(User user) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 		criteria.add(Restrictions.eq("user", user));
-		criteria.addOrder(Order.asc("date"));
+	
 		criteria.addOrder(Order.asc("startTime"));
 		return criteria.list();
 	}
