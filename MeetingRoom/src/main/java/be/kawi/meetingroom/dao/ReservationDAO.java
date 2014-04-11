@@ -22,6 +22,7 @@ public class ReservationDAO {
 
 	public List<Reservation> getReservations(Reservation reservation) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.add(Restrictions.eq("active",true));
 		if (reservation.getReservationId() != null) {
 			criteria.add(Restrictions.eq("reservationId", reservation.getReservationId()));
 		}
@@ -32,6 +33,7 @@ public class ReservationDAO {
 	public List<Reservation> getReservations(MeetingRoom room, Date startDate, Date endDate) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 
+		criteria.add(Restrictions.eq("active",true));
 		if (room != null) {
 			criteria.add(Restrictions.eq("meetingRoom", room));
 		}
@@ -46,6 +48,7 @@ public class ReservationDAO {
 
 	public List<Reservation> getReservationByRoom(MeetingRoom room) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.add(Restrictions.eq("active",true));
 		criteria.add(Restrictions.eq("meetingRoom", room));
 		
 		criteria.addOrder(Order.asc("startTime"));
@@ -54,6 +57,7 @@ public class ReservationDAO {
 	
 	public List<Reservation> getReservationByUser(User user) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.add(Restrictions.eq("active",true));
 		criteria.add(Restrictions.eq("user", user));
 	
 		criteria.addOrder(Order.asc("startTime"));
@@ -67,6 +71,7 @@ public class ReservationDAO {
 
 	public List<Reservation> getAllReservations() {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		criteria.add(Restrictions.eq("active",true));
 		//criteria.addOrder(Order.asc("date"));
 		criteria.addOrder(Order.asc("startTime"));
 		return criteria.list();
