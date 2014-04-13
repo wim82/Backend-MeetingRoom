@@ -2,7 +2,9 @@ package be.kawi.meetingroom.controller;
 
 import be.kawi.meetingroom.exceptions.MeetingRoomException;
 import be.kawi.meetingroom.json.JSONWrapper;
+import be.kawi.meetingroom.json.ReservationJSON;
 import be.kawi.meetingroom.json.UserJSON;
+import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
 import be.kawi.meetingroom.service.UserService;
 
@@ -12,6 +14,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -48,6 +51,34 @@ public class UserController {
 		}
 
 		jsonData.addData(usersJSON);
+		return Response.status(200).entity(jsonData).build();
+
+	}
+	/**
+	 * Gets User by his fullName
+	 * 
+	 * @param fullName
+	 * @return
+	 */
+	@GET
+	@Path("fullname/{fullName}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getUserByFullName(@PathParam(value = "fullName") String fullName) {
+		System.out.println("IN DE JUISTE CONTROLLER MET fullName:  " + fullName);
+		JSONWrapper jsonData = new JSONWrapper();
+		User user = new User();
+		UserJSON jsonUser = new UserJSON();
+		
+		try {
+			user = userService.getUserByFullName(fullName);
+			 jsonUser = new UserJSON(user);
+
+		} catch (MeetingRoomException e) {
+			jsonData.addMessage(e.getCustomMessage());
+			return Response.status(412).entity(jsonData).build();
+		}
+
+		jsonData.addData(jsonUser);
 		return Response.status(200).entity(jsonData).build();
 
 	}

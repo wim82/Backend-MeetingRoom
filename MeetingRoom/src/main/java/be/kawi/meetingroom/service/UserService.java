@@ -9,6 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 import be.kawi.meetingroom.dao.UserDAO;
 import be.kawi.meetingroom.exceptions.CorruptDatabaseException;
 import be.kawi.meetingroom.exceptions.NoSuchFullNameException;
+import be.kawi.meetingroom.exceptions.NoSuchMeetingRoomException;
+import be.kawi.meetingroom.model.MeetingRoom;
+import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.model.User;
 
 @Service
@@ -46,4 +49,27 @@ public class UserService {
 		return login(user);
 	}
 
+	@Transactional
+	public User getUserByFullName(String fullName) {
+		User user = new User();
+		user.setFullName(fullName);
+		
+		List<User> possibleUsers = userDAO.getUser(user);
+		
+
+		//List<MeetingRoom> possibleMeetingRooms = meetingRoomDAO.getMeetingRoom(meetingRoom);
+
+		if (possibleUsers.isEmpty()) {
+			throw new NoSuchFullNameException();
+		}
+
+		if (possibleUsers.size() > 1) {
+			throw new CorruptDatabaseException("There are 2 users with the same fullName in the database");
+		}
+
+		User result = possibleUsers.get(0);
+		return result;
+
+	}
+	
 }
