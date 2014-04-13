@@ -1,6 +1,7 @@
 package be.kawi.meetingroom.controller;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
@@ -21,7 +22,9 @@ import be.kawi.meetingroom.exceptions.MeetingRoomException;
 import be.kawi.meetingroom.exceptions.data.Message;
 import be.kawi.meetingroom.json.DateUtil;
 import be.kawi.meetingroom.json.JSONWrapper;
+import be.kawi.meetingroom.json.MeetingRoomJSON;
 import be.kawi.meetingroom.json.ReservationJSON;
+import be.kawi.meetingroom.model.MeetingRoom;
 import be.kawi.meetingroom.model.Reservation;
 import be.kawi.meetingroom.service.ReservationService;
 import be.kawi.meetingroom.service.UserService;
@@ -140,7 +143,7 @@ public class ReservationController {
 		JSONWrapper jsonData = new JSONWrapper();
 		List<Reservation> reservations = new ArrayList<Reservation>();
 		List<ReservationJSON> jsonReservations = new ArrayList<ReservationJSON>();
-
+		
 		try {
 			reservations = reservationService.getReservationByUserId(userId);
 			for (Reservation reservation : reservations) {
@@ -191,6 +194,44 @@ public class ReservationController {
 		}
 
 		jsonData.addData(jsonReservations);
+		return Response.status(200).entity(jsonData).build();
+
+	}
+	
+	/**
+	 * 
+	 * Gets all occupied meetingRooms for a specific startDate and endDate 
+	 * 
+	 * example: http://localhost:8080/meetingRoom/data/reservations/meetingrooms/20140509%2008:00/20140509%2016:45
+	 * 
+	 * @param startDate endDate
+	 * @return
+	 */
+	
+	@GET
+	@Path("meetingrooms/{startDate}/{endDate}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response getOccupiedMeetingRooms(@PathParam(value = "startDate") String startDate,@PathParam(value = "endDate") String endDate) {
+		
+		DateTime startDateTime = DateUtil.getLongDateTimeFromString(startDate);
+		DateTime endDateTime = DateUtil.getLongDateTimeFromString(endDate);
+
+		JSONWrapper jsonData = new JSONWrapper();
+		List<MeetingRoom> occupiedMeetingRooms = new ArrayList<MeetingRoom>();
+		List<MeetingRoomJSON> jsonMeetingRooms = new ArrayList<MeetingRoomJSON>();
+
+		try {
+			occupiedMeetingRooms = reservationService.getOccupiedMeetingRooms(startDateTime, endDateTime);
+			for (MeetingRoom meetingRoom : occupiedMeetingRooms) {
+				jsonMeetingRooms.add(new MeetingRoomJSON(meetingRoom));
+			}
+
+		} catch (MeetingRoomException e) {
+			jsonData.addMessage(e.getCustomMessage());
+			return Response.status(412).entity(jsonData).build();
+		}
+
+		jsonData.addData(jsonMeetingRooms);
 		return Response.status(200).entity(jsonData).build();
 
 	}

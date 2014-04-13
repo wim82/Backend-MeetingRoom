@@ -67,4 +67,10 @@ public class DateUtil {
 		return dtf.parseDateTime(date);
 
 	}
+	
+	public static DateTime getLongDateTimeFromString(String date) {
+		DateTimeFormatter dtf = DateTimeFormat.forPattern(TIME_FORMAT);
+		return dtf.parseDateTime(date);
+
+	}
 }

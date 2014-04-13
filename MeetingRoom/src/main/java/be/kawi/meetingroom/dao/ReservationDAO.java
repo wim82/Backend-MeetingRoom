@@ -45,6 +45,36 @@ public class ReservationDAO {
 
 		return criteria.list();
 	}
+	
+	public List<Reservation> getStartDateReservations(Date startDate){
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		
+		criteria.add(Restrictions.eq("active",true));
+		criteria.add(Restrictions.le("startTime", startDate));
+		criteria.add(Restrictions.gt("endTime", startDate));
+		
+		return criteria.list();
+	}
+	
+	public List<Reservation> getEndDateReservations(Date endDate){
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		
+		criteria.add(Restrictions.eq("active",true));
+		criteria.add(Restrictions.lt("startTime", endDate));
+		criteria.add(Restrictions.ge("endTime", endDate));
+		
+		return criteria.list();
+	}
+	
+	public List<Reservation> getMixedDateReservations(Date startDate, Date endDate){
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
+		
+		criteria.add(Restrictions.eq("active",true));
+		criteria.add(Restrictions.gt("startTime", startDate));
+		criteria.add(Restrictions.lt("endTime", endDate));
+		
+		return criteria.list();
+	}
 
 	public List<Reservation> getReservationByRoom(MeetingRoom room) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);

@@ -1,5 +1,6 @@
 package be.kawi.meetingroom.service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -81,9 +82,39 @@ public class ReservationService {
 		MeetingRoom room = new MeetingRoom(roomId);
 		Date startDate = date.withTime(0, 0, 0, 0).toDate();
 		Date endDate = date.withTime(0, 0, 0, 0).plusDays(amountOfDays).toDate();
+		System.out.println("amount " + startDate + " " + endDate);
 
 		return reservationDAO.getReservations(room, startDate, endDate);
 
+	}
+	
+	@Transactional
+	public List<MeetingRoom> getOccupiedMeetingRooms(DateTime startDateTime, DateTime endDateTime){
+		
+		List<MeetingRoom> occupiedMeetingRooms = new ArrayList<MeetingRoom>();
+		List<Reservation> reservations = new ArrayList<Reservation>();
+		Date startDate = startDateTime.toDate();
+		Date endDate = endDateTime.toDate();
+		reservations = reservationDAO.getStartDateReservations(startDate);
+		for (int i=0; i<reservations.size(); i++){
+		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
+		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
+			occupiedMeetingRooms.add(occupiedMeetingRoom);}
+		}
+		reservations = reservationDAO.getEndDateReservations(endDate);
+		for (int i=0; i<reservations.size(); i++){
+		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
+		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
+			occupiedMeetingRooms.add(occupiedMeetingRoom);}
+		}
+		reservations = reservationDAO.getMixedDateReservations(startDate, endDate);
+		for (int i=0; i<reservations.size(); i++){
+		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
+		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
+			occupiedMeetingRooms.add(occupiedMeetingRoom);}
+		}
+		
+		return occupiedMeetingRooms;
 	}
 
 	@Transactional
