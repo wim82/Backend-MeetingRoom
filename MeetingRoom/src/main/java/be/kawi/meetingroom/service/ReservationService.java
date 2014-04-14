@@ -37,7 +37,6 @@ public class ReservationService {
 	public Reservation getReservation(Integer reservationId) {
 		Reservation reservation = new Reservation();
 		reservation.setReservationId(reservationId);
-		System.out.println("inGetReservation met : " + reservationId);
 		return getReservation(reservation);
 	}
 
@@ -70,7 +69,7 @@ public class ReservationService {
 		MeetingRoom room = new MeetingRoom(roomId);
 		return reservationDAO.getReservationByRoom(room);
 	}
-	
+
 	@Transactional
 	public List<Reservation> getReservationByUserId(Integer userId) {
 		User user = new User(userId);
@@ -87,34 +86,51 @@ public class ReservationService {
 		return reservationDAO.getReservations(room, startDate, endDate);
 
 	}
-	
+
 	@Transactional
-	public List<MeetingRoom> getOccupiedMeetingRooms(DateTime startDateTime, DateTime endDateTime){
-		
+	public List<MeetingRoom> getOccupiedMeetingRooms(DateTime startDateTime, DateTime endDateTime) {
+
 		List<MeetingRoom> occupiedMeetingRooms = new ArrayList<MeetingRoom>();
 		List<Reservation> reservations = new ArrayList<Reservation>();
 		Date startDate = startDateTime.toDate();
 		Date endDate = endDateTime.toDate();
+		
 		reservations = reservationDAO.getStartDateReservations(startDate);
-		for (int i=0; i<reservations.size(); i++){
-		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
-		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
-			occupiedMeetingRooms.add(occupiedMeetingRoom);}
-		}
-		reservations = reservationDAO.getEndDateReservations(endDate);
-		for (int i=0; i<reservations.size(); i++){
-		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
-		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
-			occupiedMeetingRooms.add(occupiedMeetingRoom);}
-		}
-		reservations = reservationDAO.getMixedDateReservations(startDate, endDate);
-		for (int i=0; i<reservations.size(); i++){
-		MeetingRoom occupiedMeetingRoom=reservations.get(i).getMeetingRoom();
-		if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))){
-			occupiedMeetingRooms.add(occupiedMeetingRoom);}
+		for (int i = 0; i < reservations.size(); i++) {
+			MeetingRoom occupiedMeetingRoom = reservations.get(i).getMeetingRoom();
+			if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))) {
+				occupiedMeetingRooms.add(occupiedMeetingRoom);
+			}
 		}
 		
+		reservations = reservationDAO.getEndDateReservations(endDate);
+		for (int i = 0; i < reservations.size(); i++) {
+			MeetingRoom occupiedMeetingRoom = reservations.get(i).getMeetingRoom();
+			if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))) {
+				occupiedMeetingRooms.add(occupiedMeetingRoom);
+			}
+		}
+		
+		reservations = reservationDAO.getMixedDateReservations(startDate, endDate);
+		for (int i = 0; i < reservations.size(); i++) {
+			MeetingRoom occupiedMeetingRoom = reservations.get(i).getMeetingRoom();
+			if (!(occupiedMeetingRooms.contains(occupiedMeetingRoom))) {
+				occupiedMeetingRooms.add(occupiedMeetingRoom);
+			}
+		}
+
 		return occupiedMeetingRooms;
+	}
+	
+	@Transactional
+	public List<MeetingRoom> getAvailableMeetingRooms(DateTime startDateTime, DateTime endDateTime) {
+		
+		List<MeetingRoom> occupiedMeetingRooms = getOccupiedMeetingRooms(startDateTime, endDateTime); 
+		List<MeetingRoom> availableMeetingRooms = meetingRoomService.getMeetingRooms();
+		
+		availableMeetingRooms.removeAll(occupiedMeetingRooms);
+		
+		return availableMeetingRooms;
 	}
 
 	@Transactional

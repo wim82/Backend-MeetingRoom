@@ -221,7 +221,7 @@ public class ReservationController {
 		List<MeetingRoomJSON> jsonMeetingRooms = new ArrayList<MeetingRoomJSON>();
 
 		try {
-			occupiedMeetingRooms = reservationService.getOccupiedMeetingRooms(startDateTime, endDateTime);
+			occupiedMeetingRooms = reservationService.getAvailableMeetingRooms(startDateTime, endDateTime);
 			for (MeetingRoom meetingRoom : occupiedMeetingRooms) {
 				jsonMeetingRooms.add(new MeetingRoomJSON(meetingRoom));
 			}

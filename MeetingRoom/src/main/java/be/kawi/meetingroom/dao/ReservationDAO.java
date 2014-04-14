@@ -46,6 +46,8 @@ public class ReservationDAO {
 		return criteria.list();
 	}
 	
+	//we need better names for these methods
+	//Startdate is in reservation
 	public List<Reservation> getStartDateReservations(Date startDate){
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(Reservation.class);
 		
