@@ -18,12 +18,16 @@ public class MeetingRoomDAO {
 	private SessionFactory sessionFactory;
 
 	public List<MeetingRoom> getMeetingRooms() {
-		return sessionFactory.getCurrentSession().createCriteria(MeetingRoom.class).list();
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(MeetingRoom.class);
+		criteria.add(Restrictions.eq("active",true));
+		criteria.addOrder(Order.asc("roomName"));
+		return criteria.list();
 	}
 
 	public List<MeetingRoom> getMeetingRoom(MeetingRoom meetingRoom) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(MeetingRoom.class);
 		criteria.add(Restrictions.eq("roomId", meetingRoom.getRoomId()));
+		criteria.add(Restrictions.eq("active",true));
 		criteria.addOrder(Order.asc("roomName"));
 		return criteria.list();
 	}

@@ -19,12 +19,14 @@ public class UserDAO {
 
 	public List<User> getUsers() {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(User.class);
+		criteria.add(Restrictions.eq("active",true));
 		criteria.addOrder(Order.asc("fullName"));
 		return criteria.list();
 	}
 
 	public List<User> getUser(User user) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(User.class);
+		criteria.add(Restrictions.eq("active",true));
 		criteria.add(Restrictions.ilike("fullName", user.getFullName()));
 		return criteria.list();
 	}
