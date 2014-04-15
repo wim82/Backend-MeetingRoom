@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -17,12 +18,14 @@ public class UserDAO {
 	private SessionFactory sessionFactory;
 
 	public List<User> getUsers() {
-		return sessionFactory.getCurrentSession().createCriteria(User.class).list();
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(User.class);
+		criteria.addOrder(Order.asc("fullName"));
+		return criteria.list();
 	}
 
 	public List<User> getUser(User user) {
 		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(User.class);
-		criteria.add(Restrictions.eq("fullName", user.getFullName()));
+		criteria.add(Restrictions.ilike("fullName", user.getFullName()));
 		return criteria.list();
 	}
 

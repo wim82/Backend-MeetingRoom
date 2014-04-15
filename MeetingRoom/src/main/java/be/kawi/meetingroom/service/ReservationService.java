@@ -30,6 +30,7 @@ public class ReservationService {
 
 	@Transactional
 	public Reservation createReservation(Reservation reservation) {
+		reservation.setDescription(reservation.getDescription().trim());
 		return reservationDAO.saveReservation(reservation);
 	}
 
@@ -81,7 +82,6 @@ public class ReservationService {
 		MeetingRoom room = new MeetingRoom(roomId);
 		Date startDate = date.withTime(0, 0, 0, 0).toDate();
 		Date endDate = date.withTime(0, 0, 0, 0).plusDays(amountOfDays).toDate();
-		System.out.println("amount " + startDate + " " + endDate);
 
 		return reservationDAO.getReservations(room, startDate, endDate);
 
@@ -135,7 +135,6 @@ public class ReservationService {
 
 	@Transactional
 	public void deleteReservation(Integer reservationId) {
-		System.out.println("deleteReservation");
 		Reservation reservation = getReservation(reservationId);
 		reservation.setActive(false);
 		reservationDAO.saveReservation(reservation);
@@ -143,7 +142,7 @@ public class ReservationService {
 
 	@Transactional
 	public Reservation updateReservation(Reservation reservation) {
-		System.out.println("updateReservation");
+		reservation.setDescription(reservation.getDescription().trim());
 		deleteReservation(reservation.getReservationId()); // delete = set
 															// active to false
 		return reservationDAO.saveReservation(reservation); // create = new

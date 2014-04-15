@@ -45,14 +45,14 @@ public class UserService {
 	@Transactional
 	public User login(String fullName) {
 		User user = new User();
-		user.setFullName(fullName);
+		user.setFullName(fullName.trim());
 		return login(user);
 	}
 
 	@Transactional
 	public User getUserByFullName(String fullName) {
 		User user = new User();
-		user.setFullName(fullName);
+		user.setFullName(fullName.trim());
 		
 		List<User> possibleUsers = userDAO.getUser(user);
 		
