@@ -41,5 +41,25 @@ public class MeetingRoomService {
 		return result;
 
 	}
+	
+	@Transactional
+	public MeetingRoom getMeetingRoom(String roomName) {
+	
+
+		List<MeetingRoom> possibleMeetingRooms = meetingRoomDAO.getMeetingRoom(roomName);
+
+		if (possibleMeetingRooms.isEmpty()) {
+			throw new NoSuchMeetingRoomException();
+		}
+
+		if (possibleMeetingRooms.size() > 1) {
+			throw new CorruptDatabaseException("There are 2 meeting rooms with the same name in the database");
+		}
+
+		MeetingRoom result = possibleMeetingRooms.get(0);
+		return result;
+
+	}
+
 
 }

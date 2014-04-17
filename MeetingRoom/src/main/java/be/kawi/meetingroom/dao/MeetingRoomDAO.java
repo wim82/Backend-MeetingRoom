@@ -32,6 +32,15 @@ public class MeetingRoomDAO {
 		return criteria.list();
 	}
 
+	
+	public List<MeetingRoom> getMeetingRoom(String roomName) {
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(MeetingRoom.class);
+		criteria.add(Restrictions.ilike("roomName", roomName));
+		criteria.add(Restrictions.eq("active",true));
+		return criteria.list();
+	}
+	
+	
 	public void updateMeetingRoom(MeetingRoom meetingRoom) {
 		sessionFactory.getCurrentSession().update(meetingRoom);
 	}
